@@ -13,13 +13,14 @@ def build(assets,output):
     start=code.index('def make_resources(source,manifest):');end=code.index('\n\ndef apply(',start)
     code=code[:start]+"def make_resources(source,manifest):\n    from dual_resources import make_resources as make_dual\n    return make_dual(source,manifest,BASE)\n"+code[end:]
     code=code.replace('    from numeric_font_probe import apply_numeric_probe\n','').replace('    payloads=apply_numeric_probe(source,entries,payloads)\n','')
-    code=code.replace('G0 数字图标通道诊断','G2 双字库扩大覆盖').replace('F1 字库不变；开始/继续/选项临时显示数字图标','自动选择可装入原资源总容量的最大双字库方案').replace('准备数字字形通道诊断','构建双字库和非字幕译文')
+    code=code.replace('G0 数字图标通道诊断','G2.1 双字库读取修正版').replace('F1 字库不变；开始/继续/选项临时显示数字图标','自动选择可装入原资源总容量的最大双字库方案').replace('准备数字字形通道诊断','构建双字库和非字幕译文')
     (output/'patcher.py').write_text(code);(output/'RUN_G2.bat').write_bytes(b'@echo off\r\ncd /d "%~dp0"\r\npy -3 patcher.py\r\nif errorlevel 1 python patcher.py\r\npause\r\n')
     m['targets'].append(dict(index=298,offset=1569507328,size=26869760,key='25c2710d',sha256='20971f33f1d08e743fc839a207633b8016a29164b5fe5a99d0226835535caa0d',kind='font'))
-    m.update(version='0.8.0-G2-dual-font-coverage',switch_tested=False)
+    m.update(version='0.8.1-G2.1-multiblock-fix',switch_tested=False)
     overview=json.loads((assets/'variants.json').read_text());largest=overview['variants'][-1]
-    (output/'README-TEST.txt').write_text(f'''但丁的地狱 G2 v0.8.0 双字库扩大覆盖版
+    (output/'README-TEST.txt').write_text(f'''但丁的地狱 G2.1 v0.8.1 多块字体读取修正版
 
+修复 G2 的 Expected one original font body 错误：合法多数据块字体资源会走受校验的原条目内重排路径；并非忽略容量或结构校验。
 用户已确认 G0 可进入游戏，菜单数字标记变为按键图标。本包按要求直接扩大实际译文覆盖，不是两字探针。
 普通字库 {overview['normal_glyphs']} 字形；第二字库最多追加 {largest['supplemental_glyphs']} 个汉字，原 38 个按键图标的记录与像素保留。两张纹理均保持 512×256，纹理头不变，按钮、颜色、占位符和换行先按人类译稿严格校验，再将溢出字编译为数字图标标记，并做反向还原验证。
 最大方案每表 {largest['translated_ids_per_table']} 条译文，两份表共 {largest['translated_ids_per_table']*2} 处。保留 F1 菜单，包含已定位的全部 85 条带按钮标记的说明，进一步纳入可覆盖的技能/圣物/系统提示/其他非字幕文字。目标译稿共 {overview['target_ids']} 条，未覆盖条目明确列在 dual/62/plan.json 的 deferred 中，不会伪称全量完成；其余原文保留。对话字幕表 942 不改。

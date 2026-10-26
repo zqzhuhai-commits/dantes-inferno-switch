@@ -1,3 +1,11 @@
+## G2.1 v0.8.1：修复多数据块字体读取错误
+
+[G2.1 修正版下载](checkpoints/Dante-G2.1-Dual-Font-v0.8.1.zip) · [验证记录](checkpoints/Dante-G2.1-Dual-Font-v0.8.1.validation.json)
+
+修复用户截图的 `Expected one original font body`：原 G2 在原位写入前误限定每个字体资源只能有一个 SDAT/Rpak 数据块。G2.1 先检查实际结构，多块合法资源走受校验的原 STR 条目内重排；缺失/重复资源及不支持的数据块仍拒绝。容量、解压重读、无关资源保持和输出校验不放宽。
+
+71 项工具测试通过，字体资产及译文与 G2 逐字节相同，覆盖范围不变。G2.1 尚待真实 VIV 生成和实机反馈。报错发生在复制/安装前，原版未被该操作改写；解压到新目录，运行 RUN_G2.bat，选择同一原版重试。
+
 ## G2 v0.8.0：双字库扩大覆盖候选
 
 [G2 安装包](checkpoints/Dante-G2-Dual-Font-v0.8.0.zip) · [覆盖范围、限制与安装](docs/G2-dual-font-coverage.md) · [验证报告](checkpoints/Dante-G2-Dual-Font-v0.8.0.validation.json)

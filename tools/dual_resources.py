@@ -18,10 +18,27 @@ def unchanged_chunks(data,replacements):
     return result
 
 def fixed_stream(data,compressed):
-    try:
-        out,delta=patch_slots(data,compressed);return out,delta,'original_chunk_slots'
-    except ValueError as e:
-        if 'capacity' not in str(e):raise
+    # Resources may legally span several SDAT/Rpak blocks. The narrow slot
+    # writer accepts exactly one body; route multi-block resources through the
+    # checked reflow path rather than rejecting them before capacity handling.
+    current=None;headers={};bodies={}
+    for at,c in chunks(data):
+        if c[8:12]==b'SHDR':
+            current=c[44:].split(b'\0')[1].decode('ascii')
+            if current in compressed:
+                headers[current]=headers.get(current,0)+1;bodies.setdefault(current,[])
+        elif current in compressed:bodies[current].append(c[8:12])
+    for path in compressed:
+        if headers.get(path)!=1 or not bodies.get(path):raise ValueError('字体资源缺失或重复：'+path)
+        if any(tag not in (b'SDAT',b'Rpak') for tag in bodies[path]):raise ValueError('不支持的字体数据块：'+path)
+    # Decode all original selected parts once, so malformed/truncated resources
+    # do not become eligible merely because they have several blocks.
+    unpack_selected(data,compressed)
+    if all(len(bodies[path])==1 for path in compressed):
+        try:
+            out,delta=patch_slots(data,compressed);return out,delta,'original_chunk_slots'
+        except ValueError as e:
+            if 'capacity' not in str(e):raise
     replacements={p:(decompress(blob),[blob]) for p,blob in compressed.items()}
     out,delta=reflow_compressed(data,replacements)
     end=max(at+len(c) for at,c in chunks(out));fill=len(data)-end

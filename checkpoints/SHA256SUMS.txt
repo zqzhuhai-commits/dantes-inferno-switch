@@ -3,6 +3,7 @@ c640adf445fb6602ee1e22997eeaac833bc13f04b85c213896beb0ba24edea65  Dante-F2-Menu-
 8f59aee6658e314e525b52eaee10fe1dcb2c4f8b4b1dbc88093edd929f38f0a4  Dante-Fixed-Menu-F-v0.6.zip
 828f709a2d1f9755adf1fb678a615ebf622515201cccb70a8078f18e7f4956c3  Dante-G0-Numeric-Icon-Probe-v0.7.0.zip
 184cfbe706c4f6b447bcbdd375ec37d36e4915b9a8cf43dbcd21c140805ad5e1  Dante-G2-Dual-Font-v0.8.0.zip
+46a35c39aec7cafb6fae22b9a60212eebc7ce3ef1563859d338ca0d74f06cccc  Dante-G2.1-Dual-Font-v0.8.1.zip
 164899ff5b6f9535297171d154d2d9f2069ce8cfecb9669bca1088bf21d73092  Dante-Menu-D-v0.4.zip
 1c450b452d1caac06bbd35a78b817bd6c3b4b4e96a2c58fd925029b73d70e512  Dante-Minimal-Font-C-v0.3.zip
 4d72af585db493ddd188a766d9c2c433d451e43cbc423a957a6e2cbaca318e3c  Dante-NonStory-E-v0.5.zip
