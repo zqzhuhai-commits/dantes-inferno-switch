@@ -1,3 +1,5 @@
+> F3 最新实机反馈：能运行，但暂停菜单、按键说明无字。当前仅启动字体覆盖得到验证，关卡文字未完成。请用 [只读关卡证据采集器](checkpoints/Dante-Level-Evidence-Collector-v1.zip) 选择原版 `bigfile0.viv`，将生成的 `Dante-Private-Level-Evidence.zip` 私下提供用于分析；不需要上传完整游戏。
+
 ## F3 v0.6.3 单字库紧凑扩展
 
 用户反馈 G2.1 可进菜单、开始游戏读条卡死；根因未确定。现提供 [F3 单字库版](checkpoints/Dante-F3-Single-Font-v0.6.3.zip)：771 字形、每表 906 条非字幕译文。保持原版 buttons 和关卡字体流 298，只在启动流 2095 原位替换普通字体；不做 STR 重排。先恢复原版，再运行 `RUN_F3.bat`。尚待实机验证，关卡切换至原版字体时可能缺字。详见 [制作记录](docs/F3-single-font.md)。

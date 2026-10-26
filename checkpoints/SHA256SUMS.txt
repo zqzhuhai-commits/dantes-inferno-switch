@@ -9,3 +9,4 @@ c640adf445fb6602ee1e22997eeaac833bc13f04b85c213896beb0ba24edea65  Dante-F2-Menu-
 4d72af585db493ddd188a766d9c2c433d451e43cbc423a957a6e2cbaca318e3c  Dante-NonStory-E-v0.5.zip
 9f0c431758cb83888d09b08d3e0f70ed43cb9617aa0a2680891bf3fe00b83305  Dante-Startup-Diagnostic-v0.2.zip
 bca2e6eeb527dc81f338ed70dbf796afff5c9e2340c89ce42eec777559e9dbac  Dante-F3-Single-Font-v0.6.3.zip
+074dcca6ae900d233d3a7069021634ae8276c9e9bb75ef5d4f3786cc7496f89c  Dante-Level-Evidence-Collector-v1.zip
