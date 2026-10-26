@@ -41,19 +41,21 @@ def make_text_resources(source,manifest):
             f.seek(item['offset']);data=f.read(item['size'])
         if hashlib.sha256(data).hexdigest()!=target['sha256']:raise ValueError('原始文本资源不匹配')
         original=parse(data);changed=bytearray(data);changes=0
-        replacement=b'TEST-A!' if manifest['mode']=='A' else '选项'.encode('utf-8')
+        replacements=manifest.get('translations',{'Options':'TEST-A!' if manifest['mode']=='A' else '选项'})
+        from text_tokens import validate
+        expected_changes=sum(row['source'] in replacements for row in original)
+        if expected_changes!=manifest.get('text_changes_per_resource',6):raise ValueError('待替换文本数量不匹配')
         for row in original:
-            if row['source']!='Options':continue
-            raw=row['source'].encode('utf-8');offset=row['offset']
-            if len(replacement)>len(raw):raise ValueError('诊断文字超过原字符串容量')
-            changed[offset:offset+len(raw)]=replacement+bytes(len(raw)-len(replacement))
-            changes+=1
-        if changes!=6:raise ValueError('Options 条目数量不匹配')
+            if row['source'] not in replacements:continue
+            text=replacements[row['source']];validate(row['source'],text)
+            replacement=text.encode('utf-8');raw=row['source'].encode('utf-8');offset=row['offset']
+            if len(replacement)>len(raw):raise ValueError('译文超过原字符串容量：'+row['source'])
+            changed[offset:offset+len(raw)]=replacement+bytes(len(raw)-len(replacement));changes+=1
         reread=parse(changed)
         for old,new in zip(original,reread):
-            wanted=replacement.decode('utf-8') if old['source']=='Options' else old['source']
+            wanted=replacements.get(old['source'],old['source'])
             if old['id']!=new['id'] or old['offset']!=new['offset'] or new['source']!=wanted:
-                raise ValueError('诊断文本重读校验失败')
+                raise ValueError('文本重读校验失败')
         if len(data)!=len(changed):raise ValueError('诊断资源长度改变')
         payloads[item['index']]=bytes(changed)
     return entries,payloads
@@ -155,12 +157,12 @@ def apply(source,output,install=False,notify=lambda *a:None,cancel=lambda:False)
 def gui():
     import tkinter as tk
     from tkinter import ttk,filedialog,messagebox
-    root=tk.Tk();root.title('但丁的地狱 C 最小中文字库测试');root.geometry('800x580')
+    root=tk.Tk();root.title('但丁的地狱 原位菜单汉化测试');root.geometry('800x580')
     root.columnconfigure(0,weight=1)
     source=tk.StringVar();output=tk.StringVar();automatic=tk.BooleanVar(value=True);status=tk.StringVar(value='请选择上传游戏包对应的原版 bigfile0.viv')
     stop=threading.Event();events=queue.Queue();busy=False
-    ttk.Label(root,text='但丁的地狱 · C 最小中文字库测试',font=('',15,'bold')).grid(row=0,column=0,padx=20,pady=15,sticky='w')
-    ttk.Label(root,text='仅新增选、项两个字形；原纹理尺寸和所有资源位置不变').grid(row=1,column=0,padx=20,sticky='w')
+    ttk.Label(root,text='但丁的地狱 · 原位菜单汉化测试',font=('',15,'bold')).grid(row=0,column=0,padx=20,pady=15,sticky='w')
+    ttk.Label(root,text='原纹理尺寸和所有资源位置不变；覆盖范围见测试说明').grid(row=1,column=0,padx=20,sticky='w')
     form=ttk.Frame(root);form.grid(row=2,column=0,padx=20,pady=15,sticky='ew');form.columnconfigure(0,weight=1)
     def choose():
         p=filedialog.askopenfilename(filetypes=[('VIV 资源包','*.viv')])
