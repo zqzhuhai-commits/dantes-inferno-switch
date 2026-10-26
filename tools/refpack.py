@@ -57,3 +57,56 @@ def decompress(data, max_output=64 * 1024 * 1024):
     if len(out) != expected or cursor != len(data):
         raise ValueError('RefPack size or consumed length mismatch')
     return bytes(out)
+
+
+def compress(data):
+    """Greedy encoder for the same bounded 10fb variant, verified by decode."""
+    from collections import deque
+    if len(data)>0xffffff:raise ValueError('RefPack 24-bit length exceeded')
+    out=bytearray(b'\x10\xfb'+len(data).to_bytes(3,'big'))
+    positions={};pending=bytearray();pos=0
+    def remember(i):
+        if i+3<=len(data):
+            q=positions.setdefault(data[i:i+3],deque(maxlen=4096));q.append(i)
+    def literals(final=False):
+        while len(pending)>=4:
+            n=min(len(pending)//4*4,112)
+            out.append(0xe0+(n//4)-1);out.extend(pending[:n]);del pending[:n]
+        if final:out.append(0xfc+len(pending));out.extend(pending);pending.clear()
+    while pos<len(data):
+        best=0;distance=0
+        if pos+3<=len(data):
+            q=positions.get(data[pos:pos+3],())
+            limit=min(1028,len(data)-pos)
+            for previous in reversed(q):
+                dist=pos-previous
+                if dist>131072:break
+                # Long form is also valid at short distances, so inspect the
+                # full limit and choose its appropriate command below.
+                cap=limit
+                if best>=cap:break
+                if best>=3 and data[previous+best]!=data[pos+best]:continue
+                n=3
+                while n<cap and data[previous+n]==data[pos+n]:n+=1
+                if (n>=5 or n>=4 and dist<=16384 or n>=3 and dist<=1024) and n>best:
+                    best=n;distance=dist
+                    if n==limit:break
+        if best:
+            literals();literal=len(pending);dist=distance-1
+            if best<=10 and distance<=1024:
+                out.extend([((dist>>8)<<5)|((best-3)<<2)|literal,dist&255])
+            elif best<=67 and distance<=16384:
+                out.extend([0x80|(best-4),(literal<<6)|(dist>>8),dist&255])
+            else:
+                if best<5:raise ValueError('Invalid long match')
+                length=best-5
+                out.extend([0xc0|((dist>>16)<<4)|((length>>8)<<2)|literal,(dist>>8)&255,dist&255,length&255])
+            out.extend(pending);pending.clear()
+            for i in range(pos,pos+best):remember(i)
+            pos+=best
+        else:
+            pending.append(data[pos]);remember(pos);pos+=1
+            if len(pending)>=115:literals()
+    literals(final=True)
+    if decompress(out,max_output=len(data))!=data:raise ValueError('RefPack encoder round-trip failed')
+    return bytes(out)
