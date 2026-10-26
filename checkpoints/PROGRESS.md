@@ -85,3 +85,22 @@ F 的严格约束已按实际 VIV 验证：纹理 512×256、tg4h 字节不变�
 python tools/build_fixed_menu_font.py /path/to/original-font.inf /path/to/NotoSansSC.ttf translations/global.zh-CN.fixed-menu.csv /path/to/new-font
 python packaging/build_fixed_menu_release.py /path/to/original/bigfile0.viv /path/to/Dante-Minimal-Font-C-v0.3 /path/to/new-font /path/to/new/Dante-Fixed-Menu-F-v0.6
 ```
+
+
+## F 用户实机反馈与 F1 v0.6.1 文本覆盖修正
+
+用户确认 F：可加载、字体改变，但菜单仍英文。F 的“字体加载生效”与“译文生效”应分开记录，不能将 F 记为菜单汉化通过。
+
+复查发现 F 仅修改英文表 752，没有改同内容的 1437；752 位于另一全局区域，1437 紧邻 frontend 资源区域。此前文档直接将 752 称为启动表、1437 称为关卡表，证据不足，这一归属不能继续作为实现前提。F1 同时覆盖两份英文表并更新五份关联 TOC 中的英文表长度。实际运行时选择哪份仍由实机反馈确认，遗漏副本是本轮修复假设，不冒称唯一根因已证实。
+
+- F1 两份表各 346 个 ID，共 692 处替换；独立重读结果完全相同，两份都包含 Options→选项、Start Game→开始游戏、Continue→继续。
+- 字体、纹理、预览及字体参数资产与 F ZIP 逐字节一致；输出 2095 字体流也与 F 输出逐字节一致。
+- 512×256、原 tg4h、原槽位、STR 区块位置/长度、全部 VIV 索引/位置/长度不变。
+- 八个目标资源为 2/171/302/752/1096/1437/2095/2102；其他区域逐字节一致。298 字体流不改，所以关卡菜单若使用另一字库，仍可能缺字；剧情/访谈表 942 不改。
+- 五份 TOC 都更新英文表长度；只有 171/2102 继续反映 F 字库解码长度，2/302/1096 的字体根长度保持原样。
+- 从原版及干净 ZIP 完整生成 3,170,839,904 字节输出，SHA-256：26da1bb7293378b03070ceb55c0b3aa7721cf238b804c51a398553927de755a9。
+- 51 项工具测试通过，新增关联 TOC 的根长度回归检查。F1 尚未实机验证。
+
+安装与观察：恢复原版后运行 RUN_F1.bat，English，不能叠加 F。先检查主菜单开始/继续/选项；若仍英文或变成空白，反馈截图和所在菜单，再测试关卡暂停及返回标题。
+
+多纹理研究：扫描现有资源只直接看到 minion_pro/buttons 各一张纹理；FONT Unicode 页表不等于纹理页表，字形末尾字段仍未解明。上游源码已定位，但原生字体函数尚未识别。尚未制作可宣称生效的双纹理包，详见 docs/font-texture-research.md。本轮优先解决 F 已出现的文字表问题。

@@ -1,0 +1,30 @@
+{
+  "version": "0.6.1-F1-menu-table-fix",
+  "previous_f_feedback": "font changed but menus remain English",
+  "hypothesis": "F modified only table 752; menu text copy 1437 was omitted. Actual runtime copy selection remains to be confirmed on hardware.",
+  "switch_tested": false,
+  "translated_ids_per_table": 346,
+  "table_copies": 2,
+  "total_replacements": 692,
+  "text_tables": "both 752 and 1437 reparsed and byte-identical",
+  "core_menu_labels": "Options -> 选项; Start Game -> 开始游戏; Continue -> 继续 in both copies",
+  "font_stream": "byte-identical to F v0.6 output",
+  "font_and_texture_assets": "byte-identical to F v0.6 package",
+  "texture": [
+    512,
+    256
+  ],
+  "viv_index": "identical to original",
+  "str_chunk_positions": "identical to original",
+  "unchanged_regions": "all bytes outside eight selected resource ranges unchanged",
+  "other_font_298": "unchanged",
+  "dialogue_942": "unchanged",
+  "global_toc_font_root_sizes": "unchanged",
+  "output_size": 3170839904,
+  "output_sha256": "26da1bb7293378b03070ceb55c0b3aa7721cf238b804c51a398553927de755a9",
+  "tool_tests": 51,
+  "limitations": [
+    "Runtime Chinese display not verified",
+    "Other font stream unchanged: in-game menus may still lack glyphs"
+  ]
+}

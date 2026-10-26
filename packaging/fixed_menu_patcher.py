@@ -12,7 +12,7 @@ import queue
 from datetime import datetime
 
 BASE=Path(__file__).resolve().parent
-MANIFEST_NAME='manifest-F.json'
+MANIFEST_NAME='manifest-F1.json'
 sys.path.insert(0,str(BASE/'tools'))
 from viv import index
 from lh2_build import rebuild
@@ -29,6 +29,29 @@ def sha_file(path,notify=lambda *a:None,cancel=lambda:False):
             if not data:break
             h.update(data);done+=len(data);notify('校验文件',done,total)
     return h.hexdigest()
+
+
+def adjust_menu_toc(raw,index,text_delta,font_delta):
+    data=bytearray(raw);n=struct.unpack_from('>H',data,8)[0]
+    if data[:4]!=bytes.fromhex('9cba7b28') or 16+n*20>len(data):raise ValueError('TOC 布局不匹配')
+    found_font=found_text=False
+    for j in range(n):
+        at=16+j*20;ptr,size=struct.unpack_from('>II',data,at)
+        if ptr+8>len(data):raise ValueError('TOC 引用越界')
+        key=struct.unpack_from('>I',data,ptr)[0]
+        if j==0 and key==0:
+            if index in (171,2102):
+                if size!=31156141:raise ValueError('启动字体解码长度不匹配')
+                struct.pack_into('>I',data,at+4,size+font_delta)
+            elif index in (2,302,1096):
+                if size!=0x263325c:raise ValueError('另一字体流解码长度不匹配')
+            else:raise ValueError('未知 TOC 关联')
+            found_font=True
+        elif key==0xe00af020:
+            if size!=116272:raise ValueError('英文表解码长度不匹配')
+            struct.pack_into('>I',data,at+4,size+text_delta);found_text=True
+    if not found_font or not found_text:raise ValueError('TOC 缺少必要引用')
+    return bytes(data)
 
 
 def make_resources(source,manifest):
@@ -56,22 +79,7 @@ def make_resources(source,manifest):
             payloads[i],font_delta=patch_slots(raw,fonts)
             if len(payloads[i])!=len(raw) or [(a,len(c)) for a,c in chunks(raw)]!=[(a,len(c)) for a,c in chunks(payloads[i])]:raise ValueError('字体流位置发生变化')
     for t in manifest['targets']:
-        if t['kind']!='toc':continue
-        i=t['index'];data=bytearray(old[i]);n=struct.unpack_from('>H',data,8)[0]
-        if data[:4]!=bytes.fromhex('9cba7b28') or 16+n*20>len(data):raise ValueError('TOC 布局不匹配')
-        found_font=found_text=False
-        for j in range(n):
-            at=16+j*20;ptr,size=struct.unpack_from('>II',data,at)
-            if ptr+8>len(data):raise ValueError('TOC 引用越界')
-            key=struct.unpack_from('>I',data,ptr)[0]
-            if j==0 and key==0:
-                if size!=31156141:raise ValueError('字体解码长度不匹配')
-                struct.pack_into('>I',data,at+4,size+font_delta);found_font=True
-            elif key==0xe00af020:
-                if size!=116272:raise ValueError('英文表解码长度不匹配')
-                struct.pack_into('>I',data,at+4,size+text_delta);found_text=True
-        if not found_font or not found_text:raise ValueError('TOC 缺少必要引用')
-        payloads[i]=bytes(data)
+        if t['kind']=='toc':payloads[t['index']]=adjust_menu_toc(old[t['index']],t['index'],text_delta,font_delta)
     return entries,payloads
 
 
@@ -141,16 +149,16 @@ def apply(source,output,install=False,notify=lambda *a:None,cancel=lambda:False)
 def gui():
     import tkinter as tk
     from tkinter import ttk,filedialog,messagebox
-    root=tk.Tk();root.title('但丁的地狱 F 原位菜单测试');root.geometry('800x580')
+    root=tk.Tk();root.title('但丁的地狱 F1 原位菜单修正版');root.geometry('800x580')
     root.columnconfigure(0,weight=1)
     source=tk.StringVar();output=tk.StringVar();automatic=tk.BooleanVar(value=True);status=tk.StringVar(value='请选择上传游戏包对应的原版 bigfile0.viv')
     stop=threading.Event();events=queue.Queue();busy=False
-    ttk.Label(root,text='但丁的地狱 · F 原位菜单测试',font=('',15,'bold')).grid(row=0,column=0,padx=20,pady=15,sticky='w')
+    ttk.Label(root,text='但丁的地狱 · F1 原位菜单修正版',font=('',15,'bold')).grid(row=0,column=0,padx=20,pady=15,sticky='w')
     ttk.Label(root,text='512×256、原槽位与资源位置不变；仅启动菜单，关卡菜单暂留英文').grid(row=1,column=0,padx=20,sticky='w')
     form=ttk.Frame(root);form.grid(row=2,column=0,padx=20,pady=15,sticky='ew');form.columnconfigure(0,weight=1)
     def choose():
         p=filedialog.askopenfilename(filetypes=[('VIV 资源包','*.viv')])
-        if p:source.set(p);output.set(str(Path(p).with_name('bigfile0_'+MANIFEST_NAME[9:10]+'_diagnostic.viv')))
+        if p:source.set(p);output.set(str(Path(p).with_name('bigfile0_F1_v0.6.1.viv')))
     ttk.Label(form,text='原始 VIV').grid(row=0,column=0,sticky='w');ttk.Entry(form,textvariable=source).grid(row=1,column=0,sticky='ew')
     ttk.Button(form,text='选择…',command=choose).grid(row=1,column=1,padx=8)
     ttk.Label(form,text='输出文件（需与原文件同目录）').grid(row=2,column=0,pady=(12,0),sticky='w');ttk.Entry(form,textvariable=output).grid(row=3,column=0,columnspan=2,sticky='ew')
