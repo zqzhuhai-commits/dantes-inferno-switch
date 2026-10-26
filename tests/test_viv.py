@@ -24,7 +24,7 @@ class VivTests(unittest.TestCase):
         for i, data in enumerate(payloads):
             rows.append(struct.pack('>III', offset, len(data), 0x12340000 + i))
             offset += len(data)
-        self.archive.write_bytes(struct.pack('>4sIII', b'BIGH', offset, len(payloads), end)
+        self.archive.write_bytes(b'BIGH' + struct.pack('<I', offset) + struct.pack('>II', len(payloads), end)
                                  + b''.join(rows) + b''.join(payloads))
 
     def test_roundtrip_and_tamper(self):

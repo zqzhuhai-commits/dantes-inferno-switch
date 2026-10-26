@@ -15,7 +15,9 @@ def index(path):
         header = f.read(16)
         if len(header) != 16:
             raise ValueError('Truncated header')
-        magic, declared, count, end = struct.unpack('>4sIII', header)
+        magic = header[:4]
+        declared = struct.unpack_from('<I', header, 4)[0]
+        count, end = struct.unpack_from('>II', header, 8)
         if magic != b'BIGH' or count > 1000000:
             raise ValueError('Unsupported archive')
         size = f.seek(0, 2)
