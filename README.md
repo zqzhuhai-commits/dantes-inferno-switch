@@ -26,7 +26,7 @@
 
 ## 工具
 
-`tools/viv.py` 使用 Python 标准库，只读解析本地样本的 BIGH 变体：16 字节大端包头，每条目录由大端 offset、size、key 三个 uint32 构成。key 为不透明标识，尚未验证哈希算法。工具校验目录与数据范围，提取时拒绝覆盖已有输出。
+`tools/viv.py` 使用 Python 标准库，只读解析本地样本的 BIGH 变体：16 字节大端包头，每条目录由大端 offset、size、key 三个 uint32 构成。key 为不透明标识，尚未验证哈希算法。工具校验目录与数据范围，提取时拒绝覆盖已有输出。新增批量提取、逐字节校验与多编码原文定位，使用 Python 3.9+，无需第三方依赖。
 
 ```powershell
 python tools/viv.py "本地路径/bigfile0.viv" --output "local/bigfile0-index.json"
@@ -34,6 +34,36 @@ python tools/viv.py "本地路径/bigfile0.viv" --extract 2095 --output "local/f
 ```
 
 条目编号从 0 开始。当前工具不支持修改、回封或压缩数据解码，也不代表适用于所有 BIGH 文件。
+
+### 游戏包到位后的操作
+
+```powershell
+# 批量提取：输出目录必须尚不存在；使用编号与 key 命名，不推测原始文件名
+python tools/viv.py "local/bigfile0.viv" --extract-all --output "local/bigfile0-unpacked"
+python tools/viv.py "local/bigfile1.viv" --extract-all --output "local/bigfile1-unpacked"
+
+# 对照原包逐条检查元数据、提取文件内容及 SHA-256
+python tools/viv.py "local/bigfile0.viv" --verify "local/bigfile0-unpacked/manifest.json"
+
+# 定位未压缩资源内的已知路径或文本；输出为 JSON Lines，含包内与条目内偏移
+python tools/viv.py "local/bigfile0.viv" --find "minion_pro" --output "local/font-hits.jsonl"
+python tools/viv.py "local/bigfile0.viv" --find "Continue" --encoding utf-16-be --output "local/text-hits.jsonl"
+```
+
+- `manifest.json` 记录每个条目的编号、key、偏移、大小、提取文件名与 SHA-256。
+- 单条与批量提取均以二进制原样复制，不改变压缩内容；路径引用仅作线索，不用于创建文件路径。
+- 包头 declared size 与实际大小不一致、条目重叠会记入 warnings。其语义未确认，不自动修复；越界条目则拒绝解析。
+- 批量任务中断可能留下已完成条目，但不会生成成功清单；重新执行请使用新目录。单条复制失败会删除该次未完成文件。
+- 搜索支持 ASCII、UTF-8、UTF-16 LE/BE，按条目流式处理；搜不到不能证明不存在文本，压缩或专用编码仍需解析。
+- 当前新增功能仅通过模拟包测试，等待用户原始资源验证。没有新增已翻译文本，也未解决 STR/TOC、字体映射或回封格式。
+
+### 工具测试
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+测试覆盖原样提取与校验、空条目、内容篡改、源包变更、拒绝覆盖、非法包头与越界、跨读取区块搜索、UTF-16 定位、清单路径检查和失败后的残留清理。模拟包不包含游戏资源。
 
 ## 后续工作
 
