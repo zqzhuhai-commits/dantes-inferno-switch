@@ -1,0 +1,16 @@
+{
+  "version": "0.6.3-F3-single-font-dense",
+  "tests_passed": 73,
+  "source_viv_available": false,
+  "real_viv_end_to_end": false,
+  "switch_tested": false,
+  "zip_sha256": "bca2e6eeb527dc81f338ed70dbf796afff5c9e2340c89ce42eec777559e9dbac",
+  "glyphs": 771,
+  "translated_ids_per_table": 906,
+  "modified_font_streams": [
+    2095
+  ],
+  "level_stream_298_modified": false,
+  "buttons_modified": false,
+  "previous_hardware_feedback": "G2.1 enters menu but hangs during start-game loading; root cause unknown"
+}

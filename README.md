@@ -1,3 +1,7 @@
+## F3 v0.6.3 单字库紧凑扩展
+
+用户反馈 G2.1 可进菜单、开始游戏读条卡死；根因未确定。现提供 [F3 单字库版](checkpoints/Dante-F3-Single-Font-v0.6.3.zip)：771 字形、每表 906 条非字幕译文。保持原版 buttons 和关卡字体流 298，只在启动流 2095 原位替换普通字体；不做 STR 重排。先恢复原版，再运行 `RUN_F3.bat`。尚待实机验证，关卡切换至原版字体时可能缺字。详见 [制作记录](docs/F3-single-font.md)。
+
 ## G2.1 v0.8.1：修复多数据块字体读取错误
 
 [G2.1 修正版下载](checkpoints/Dante-G2.1-Dual-Font-v0.8.1.zip) · [验证记录](checkpoints/Dante-G2.1-Dual-Font-v0.8.1.validation.json)
