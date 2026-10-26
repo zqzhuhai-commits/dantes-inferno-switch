@@ -2,11 +2,12 @@
 
 ## 当前进度下载
 
-- [C v0.3 最小主菜单字库测试包](checkpoints/Dante-Minimal-Font-C-v0.3.zip)：仅“选、项”两字，等待用户实机反馈。
+- [D v0.4 主菜单小批汉化测试包](checkpoints/Dante-Menu-D-v0.4.zip)：开始、继续、选项，共 22 条菜单记录；待实机验证。先恢复原版，再运行 RUN_D.bat。
+- [C v0.3 最小主菜单字库测试包](checkpoints/Dante-Minimal-Font-C-v0.3.zip)：用户已确认“选项”正常显示。
 - [A/B v0.2 启动诊断包](checkpoints/Dante-Startup-Diagnostic-v0.2.zip)：A 实机可进游戏且文字生效；B 实机可进游戏但中文为空白。
 - [进度快照与下一步](checkpoints/PROGRESS.md) · [下载文件 SHA-256](checkpoints/SHA256SUMS.txt)
 
-这是开发进度存档，不是完整汉化正式发布。原游戏包未上传。
+当前推荐测试 D v0.4；C 已确认显示正常。下方 v0.1–v0.3 章节保留开发历史，最新结果以进度快照为准。这是部分汉化测试包。原游戏包未上传。
 
 
 目标：为用户本地原版资源制作简体中文文本与字库补丁。

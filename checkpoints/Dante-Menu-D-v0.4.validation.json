@@ -1,0 +1,19 @@
+{
+  "version": "0.4-menu-test",
+  "switch_tested": false,
+  "automated_tests": 42,
+  "changed_text_records": 22,
+  "glyphs": 200,
+  "atlas": [
+    512,
+    256
+  ],
+  "font_compressed": 3030,
+  "texture_compressed": 38788,
+  "texture_capacity": 39228,
+  "output_size": 3170839904,
+  "output_sha256": "fe1e9d1930d9fd33601941bc7d118f1607ac4cfde7ea1c76b844bea03ce45145",
+  "clean_zip_full_build": true,
+  "viv_index_unchanged": true,
+  "frontend_only": true
+}

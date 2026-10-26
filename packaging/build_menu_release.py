@@ -40,7 +40,7 @@ C 已收到用户实机反馈：“选项”正常显示。D 新增“开始、�
     m['package_sha256']={p.relative_to(output).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in output.rglob('*') if p.is_file() and '__pycache__' not in p.parts}
     (output/'manifest-D.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
     (output/'manifest.json').write_text(json.dumps({'switch_tested':False,'version':'0.4-menu-test'}))
-    build_package(output,output.with_suffix('.zip'),'0.4-menu-test')
+    build_package(output,Path(str(output)+'.zip'),'0.4-menu-test')
     print(json.dumps({'output_sha256':m['output_sha256'],'targets':list(payloads)},indent=2))
 
 if __name__=='__main__':
