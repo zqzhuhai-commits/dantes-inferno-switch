@@ -1,3 +1,7 @@
+a4cf44527bed8eb399d6057468705bf60e6faaa8f0d8b19042316beb126ec578  Dante-F1-Menu-Fix-v0.6.1.zip
+8f59aee6658e314e525b52eaee10fe1dcb2c4f8b4b1dbc88093edd929f38f0a4  Dante-Fixed-Menu-F-v0.6.zip
+828f709a2d1f9755adf1fb678a615ebf622515201cccb70a8078f18e7f4956c3  Dante-G0-Numeric-Icon-Probe-v0.7.0.zip
 164899ff5b6f9535297171d154d2d9f2069ce8cfecb9669bca1088bf21d73092  Dante-Menu-D-v0.4.zip
 1c450b452d1caac06bbd35a78b817bd6c3b4b4e96a2c58fd925029b73d70e512  Dante-Minimal-Font-C-v0.3.zip
+4d72af585db493ddd188a766d9c2c433d451e43cbc423a957a6e2cbaca318e3c  Dante-NonStory-E-v0.5.zip
 9f0c431758cb83888d09b08d3e0f70ed43cb9617aa0a2680891bf3fe00b83305  Dante-Startup-Diagnostic-v0.2.zip

@@ -1,0 +1,23 @@
+{
+  "version": "0.7.0-G0-numeric-icon-probe",
+  "baseline": "F1 v0.6.1",
+  "baseline_user_report": "can enter game, menus localized",
+  "tool_tests": 57,
+  "probe_records_per_table": 10,
+  "probe_tables": [
+    752,
+    1437
+  ],
+  "fonts_identical_to_f1": true,
+  "translations_identical_to_f1": true,
+  "original_viv_available": false,
+  "real_viv_end_to_end_tested": false,
+  "switch_tested": false,
+  "output_sha256": "calculated independently at installation before writing",
+  "new_chinese_glyphs": 0,
+  "new_textures": 0,
+  "limitations": [
+    "numeric glyph parser behavior awaiting hardware/code verification",
+    "not a full Chinese font expansion"
+  ]
+}
