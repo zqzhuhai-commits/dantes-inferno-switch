@@ -142,3 +142,9 @@ python tools/lh2_build.py "local/global-entry.bin" "translations/global.zh-CN.me
 | Windows 图形界面运行、Switch 中文显示与稳定性 | 尚未验证 |
 
 下载包内附测试步骤与还原说明。v0.1 是部分文本及字库验证包，不能称为完整汉化或实机通过版。原版备份请保留。
+
+## v0.1.1 工具修复
+
+修复用户截图中的 `FileNotFoundError: __pycache__/patcher.cpython-312.pyc`。v0.1 的临时打包脚本误把 Python 缓存写入清单，但 ZIP 排除了这些文件，导致原包修改前的资产检查失败。这是打包缺陷，与 VIV 资源不匹配无关。
+
+`packaging/package_release.py` 现在使用同一文件列表生成校验清单与 ZIP，排除所有层级的 `__pycache__`、`.pyc`、`.pyo`，并直接校验 ZIP 中每项文件的哈希。新增回归测试验证：包含不同 Python 版本缓存的工作目录，打包后在完全无缓存的新目录仍能通过全部资产检查。自动测试总计 35 项。v0.1.1 汉化资源及目标 VIV 输出哈希与 v0.1 相同。

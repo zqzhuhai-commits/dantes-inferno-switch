@@ -147,11 +147,11 @@ def apply(source,output,install=False,notify=lambda *a:None,cancel=lambda:False)
 def gui():
     import tkinter as tk
     from tkinter import ttk,filedialog,messagebox
-    root=tk.Tk();root.title('但丁的地狱 Switch 简体中文测试补丁 v0.1');root.geometry('800x580')
+    root=tk.Tk();root.title('但丁的地狱 Switch 简体中文测试补丁 v0.1.1');root.geometry('800x580')
     root.columnconfigure(0,weight=1)
     source=tk.StringVar();output=tk.StringVar();automatic=tk.BooleanVar(value=True);status=tk.StringVar(value='请选择上传游戏包对应的原版 bigfile0.viv')
     stop=threading.Event();events=queue.Queue();busy=False
-    ttk.Label(root,text='但丁的地狱 · 简体中文实机测试补丁 v0.1',font=('',15,'bold')).grid(row=0,column=0,padx=20,pady=15,sticky='w')
+    ttk.Label(root,text='但丁的地狱 · 简体中文实机测试补丁 v0.1.1',font=('',15,'bold')).grid(row=0,column=0,padx=20,pady=15,sticky='w')
     ttk.Label(root,text='156 条菜单/教程初稿 + 421 个新增字形 | 游戏内显示待验证').grid(row=1,column=0,padx=20,sticky='w')
     form=ttk.Frame(root);form.grid(row=2,column=0,padx=20,pady=15,sticky='ew');form.columnconfigure(0,weight=1)
     def choose():

@@ -1,4 +1,4 @@
-但丁的地狱 Switch 简体中文实机测试补丁 v0.1
+但丁的地狱 Switch 简体中文实机测试补丁 v0.1.1
 
 内容：156 条菜单/教程等中文初稿，追加 421 个字形。剧情对话尚未翻译。本版用于验证中文显示、字体映射、换行和资源加载，不是完整汉化版。
 
@@ -33,3 +33,5 @@ python patcher.py "原包路径/bigfile0.viv" "同目录/bigfile0_zh_test_v01.vi
 加 --install 可在完整验证后自动备份安装。
 
 字库新增字形来自 Noto Sans SC，采用 SIL Open Font License 1.1；许可见 Licenses/NotoSansSC-OFL.txt。
+
+修复说明：v0.1.1 排除 Python 自动生成的 __pycache__、.pyc、.pyo 缓存；校验清单与 ZIP 文件列表由同一流程生成，不再依赖 Python 小版本。汉化资源不变。请将新版解压到新目录，使用原始 VIV。
