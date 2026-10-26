@@ -1,0 +1,347 @@
+﻿id,source,translation,status
+00475083,Create Account,创建账户,menu-test
+05d44edf,Auto-Absolve,自动赦免,menu-test
+07158e7b,Controller,控制器,menu-test
+07d9798c,Account Password,账户密码,menu-test
+0b41e7a9,Select,选择,menu-test
+0c47a1a2,Confirm,确认,menu-test
+0cb39603,Achievements,成就,menu-test
+0d5cd0fd,Downloadable Content,下载内容,menu-test
+0e8a8219,Scanning for downloadable content...,正在扫描下载内容……,menu-test
+0e8b2026,The Gates of Hell Arena,地狱之门竞技场,menu-test
+0f9f6abd,Absolve,赦免,menu-test
+10f05301,Please reconnect a controller and press START to continue.,请重新连接控制器，然后按 START 继续。,menu-test
+110e1e79,Level Select,关卡选择,menu-test
+11387d24,Play Demo,游玩演示版,menu-test
+115bae4c,Upgrade,升级,menu-test
+11da7dd2,The relic is not equippable. Requires {r} {x} to equip.,无法装备此圣物。装备需要 {r} {x}。,menu-test
+12beed7a,Difficulty,难度,menu-test
+12fcf91f,You have entered an invalid password.,密码无效。,menu-test
+1357d118,The account could not be found.,找不到此账户。,menu-test
+150138e8,Start Game,开始游戏,menu-test
+1592f1de,Unholy Level,邪恶等级,menu-test
+183510c2,Heavy Attack,重攻击,menu-test
+1868f9e7,Locked,未解锁,menu-test
+191f0a9a,EXP:,经验值：,menu-test
+1932feb6,Locked,未解锁,menu-test
+19e423ce,Controller Vibration,控制器振动,menu-test
+1aaa582d,Game Completed,游戏已通关,menu-test
+1bb20ddf,Congratulations!,恭喜！,menu-test
+1cabfc43,Return to Title,返回标题画面,menu-test
+1cb61607,HOLD,按住,menu-test
+1e6a0c53,Back,返回,menu-test
+1ea0d5da,Yes,是,menu-test
+1ee66076,Launch,发射,menu-test
+20a17cd2,The health bar increases in scale,提高生命值上限,menu-test
+22005c9b,Cancel,取消,menu-test
+227431ab,Unholy,邪恶,menu-test
+228d7e05,Scroll,滚动,menu-test
+22a284ef,Featurettes,制作花絮,menu-test
+2415c0db,Jump,跳跃,menu-test
+245e8ec7,Calibration,校准,menu-test
+25c0b452,Purchase Downloadable Content,购买下载内容,menu-test
+284021e2,Bestiary,怪物图鉴,menu-test
+286557f8,Locked,未解锁,menu-test
+290ecf50,This is where a tutorial message will appear,教程提示将在此显示,menu-test
+2a91ca24,Waiting for download...,正在等待下载……,menu-test
+2b078a4b,More Information,更多信息,menu-test
+2ca01135,Change storage device,更换存储设备,menu-test
+2caade8f,Unholy,邪恶,menu-test
+2ea2f12f,Accept,接受,menu-test
+2f499df4,Back,返回,menu-test
+30118a22,User Name (e-mail),用户名（电子邮箱）,menu-test
+30d116b6,Your Level:,你的等级：,menu-test
+30ee7e1a,Evade,闪避,menu-test
+31e14678,Relic,圣物,menu-test
+33506c22,Enter your E-mail Address,输入电子邮箱地址,menu-test
+33525ba0,Continue without deleting\n,不删除并继续\n,menu-test
+354c190c,Inferno,地狱,menu-test
+360c73de,Move,移动,menu-test
+36387c9f,Confirm Your Password,再次输入密码,menu-test
+366ddb4c,Quit,退出,menu-test
+36725c87,Enter a password,输入密码,menu-test
+3797f850,Highest Wave Completed,完成的最高波次,menu-test
+389a36b0,This is a temporary warning message,临时警告提示,menu-test
+38b667f6,Magic,魔法,menu-test
+39002905,Loading,读取中,menu-test
+3aab0bf8,Retrieving User Info...,正在获取用户信息……,menu-test
+3b006e5c,You are not signed in to a gamer profile.,尚未登录玩家档案。,menu-test
+3bb83aae,Auto Absolve,自动赦免,menu-test
+3d243122,Enter a password (4-16 characters),输入密码（4 至 16 个字符）,menu-test
+3d645230,upgraded,已升级,menu-test
+3e314c32,Unholy Level:,邪恶等级：,menu-test
+3e8133de,Sign in,登录,menu-test
+3f48d8e3,Beatrice Stones,贝雅特丽齐之石,menu-test
+3f61f064,Save game,保存游戏,menu-test
+3f700a7e,Magic,魔法,menu-test
+41ce0922,Reset,重置,menu-test
+41ee12b6,Locked,未解锁,menu-test
+41f3076e,Combo List,连招列表,menu-test
+42591bdb,Retry,重试,menu-test
+4348c77f,Zealot,狂信者,menu-test
+4348c780,Hellish,地狱般,menu-test
+4348c781,Infernal,炼狱,menu-test
+435fb850,Relics,圣物,menu-test
+436e8565,Requires Unholy Level:,需要邪恶等级：,menu-test
+47597e30,Off,关闭,menu-test
+49870c85,Trials of St. Lucia [Coming Soon],圣露西亚的试炼 [Coming Soon],menu-test
+49bfb931,Continue without saving and without access to Xbox LIVE,不保存且不连接 Xbox LIVE，继续游戏,menu-test
+49f7e228,Gamma,伽马值,menu-test
+4a72cad8,Poem History,诗文沿革,menu-test
+4a752416,Dante in History,但丁生平,menu-test
+4a98a653,Sound Effects Volume,音效音量,menu-test
+4b576496,Stones Collected:,已收集石块：,menu-test
+4b86c090,Downloading online terms and conditions...,正在下载在线条款……,menu-test
+4bfcd7fe,Player Movement,角色移动,menu-test
+4c17f485,Options,选项,menu-test
+4c7174a3,Achievements,成就,menu-test
+4daaf5f6,Soundtrack,原声音乐,menu-test
+4daccdc9,Surface,地表,menu-test
+4e2dffcc,Waiting for costume change...,正在等待更换服装……,menu-test
+5015c3cf,Upgrade Available,可升级,menu-test
+515c862b,Dante's Inferno™,但丁的地狱™,menu-test
+51dcbca9,The mana bar increases in scale,提高法力值上限,menu-test
+52d0bb76,Redemption Cell,救赎能量格,menu-test
+5416c183,Press,按下,menu-test
+54195fd1,The health bar increases in scale,提高生命值上限,menu-test
+557a3035,Download,下载,menu-test
+559b65ce,What would you like to do?,你想做什么？,menu-test
+56623355,Combat,战斗,menu-test
+56d6a3c2,EXP Level Attained,已达到经验等级,menu-test
+572c8bc1,Options,选项,menu-test
+5732c687,Name 4,名称 4,menu-test
+5732c688,Name 5,名称 5,menu-test
+5732c689,Name 6,名称 6,menu-test
+5821375c,This relic is already equipped.,此圣物已装备。,menu-test
+594e2925,Holy Level,神圣等级,menu-test
+5a7a73a6,Choose where to save your game,选择游戏保存位置,menu-test
+5ae42ac1,Scythe Swing,挥动镰刀,menu-test
+5c4e5a8b,More Options,更多选项,menu-test
+5cc0d96c,default,默认,menu-test
+5daa6e7d,You do not have any magic spells yet,你尚未获得魔法,menu-test
+5e3e87e4,Adjust,调整,menu-test
+5efc24ee,Sign In,登录,menu-test
+5f960137,Confirm Password,确认密码,menu-test
+5fc0ba48,Start Game,开始游戏,menu-test
+60ff891b,Congratulations!,恭喜！,menu-test
+635e2807,Downloading Terms of Service...,正在下载服务条款……,menu-test
+6394ee3e,Name 7,名称 7,menu-test
+65bdd056,Punish,惩罚,menu-test
+6653f424,Resume,继续游戏,menu-test
+670d0b60,N/A,不适用,menu-test
+679e1a12,Name 2,名称 2,menu-test
+679e1a13,Name 3,名称 3,menu-test
+67a94a16,Tutorials,教程,menu-test
+67cc51b0,Story,剧情,menu-test
+68fd1cb5,Redemption Cell,救赎能量格,menu-test
+693a8b8f,New saved game,新存档,menu-test
+699253c2,Mana,法力,menu-test
+6b0bff81,Poem,诗文,menu-test
+6cf32ccb,to Continue,继续,menu-test
+6e6a03f1,Trials of St. Lucia,圣露西亚的试炼,menu-test
+6e7e29de,Congratulations!,恭喜！,menu-test
+6f074af6,Ledges,边缘攀爬,menu-test
+70037073,Please wait.,请稍候。,menu-test
+707f33e6,Holy,神圣,menu-test
+71ab0a27,Gap Jump,跨越缺口,menu-test
+72b6dfe1,Waves Completed,已完成波次,menu-test
+73191fed,Animated Feature Trailer,动画长片预告片,menu-test
+75ae005f,Collectibles,收集品,menu-test
+76803939,Dante's Journal,但丁的日志,menu-test
+773a0149,Jump,跳跃,menu-test
+77bfdcbe,Block,格挡,menu-test
+79139528,Select,选择,menu-test
+79268612,Breakable,可破坏物,menu-test
+79448b85,Beatrice Stones,贝雅特丽齐之石,menu-test
+7a32ee31,Pole Climb,攀爬立柱,menu-test
+7a75b2f8,Confirm upgrade,确认升级,menu-test
+7b4556e7,Evade,闪避,menu-test
+7c7260c4,Total Time Played,总游戏时间,menu-test
+7c738f8a,Unequip,卸下,menu-test
+7cc94efd,Longest Combo,最长连击,menu-test
+7e477b4a,Gates of Hell,地狱之门,menu-test
+7e64539b,Credits,制作人员,menu-test
+7f479538,About Dante,关于但丁,menu-test
+8122f21d,Grab,抓取,menu-test
+81287376,Tutorials,教程,menu-test
+82a716b0,Level Select (Debug),关卡选择（调试）,menu-test
+82e7daf3,Back,返回,menu-test
+83502382,Martyrdom,殉道,menu-test
+84773f04,Password (4-16 char.),密码（4 至 16 个字符）,menu-test
+851ca373,Music Volume,音乐音量,menu-test
+85549fa8,The mana bar increases in scale,提高法力值上限,menu-test
+861eab06,Beatrice Stone,贝雅特丽齐之石,menu-test
+877b2074,Treachery,背叛,menu-test
+887fd8a9,Total Bonus Time,总奖励时间,menu-test
+8a0dcf68,No storage device selected.  You will need to select a storage device to load games.,尚未选择存储设备，读取游戏前请选择。,menu-test
+8aab465c,Movies,影片,menu-test
+8b825381,Contrast,对比度,menu-test
+8ba55e2f,Infernal,炼狱,menu-test
+8c491494,Load Game,读取游戏,menu-test
+8d729036,Requires Holy Level:,需要神圣等级：,menu-test
+8da1b650,Hellish,地狱般,menu-test
+8e8f7659,N/A,不适用,menu-test
+8f253852,Wire Hang,悬挂绳索,menu-test
+90389bb7,Options,选项,menu-test
+90a8b264,Return to Title,返回标题画面,menu-test
+92517d0b,Quit Game,退出游戏,menu-test
+926a1541,Are you sure you want to quit the game now?,确定现在退出游戏吗？,menu-test
+92de0be0,Zoom,缩放,menu-test
+946e3ed0,Yes,是,menu-test
+95fba9d3,Your Souls: {n},你的灵魂：{n},menu-test
+970faea5,Damned,亡魂,menu-test
+97318bad,Bonus content and special features,额外内容与特别收录,menu-test
+97afa257,Canticle I: Inferno,第一篇：地狱,menu-test
+98d60d89,Treachery,背叛,menu-test
+99dda22b,Use Magic,使用魔法,menu-test
+99dda22c,Block/Special Combo Modifier,格挡／特殊连招修饰键,menu-test
+99e3a3a5,Object Interact,与物体互动,menu-test
+99e3a3a6,Grab,抓取,menu-test
+9a174eca,Temp Menu,临时菜单,menu-test
+9df0dde0,Select a storage device,选择存储设备,menu-test
+9efa2573,Filters,筛选,menu-test
+a1b558df,Infinite Magic,无限魔法,menu-test
+a1b558e0,100 Combo,百次连击,menu-test
+a1b558e1,Air Kills,空中击杀,menu-test
+a1b558e2,Stay in the Air,滞空,menu-test
+a1b558e3,Protect Innocent,保护无辜者,menu-test
+a1b558e4,No Magic,禁止魔法,menu-test
+a1b558e5,Losing Health,生命流失,menu-test
+a1b558e6,No Block,禁止格挡,menu-test
+a1b558e7,Single Combo,一气呵成,menu-test
+a1f5321f,An additional relic slot is unlocked,解锁额外圣物栏位,menu-test
+a22231f0,GAME PAUSED\n\nPlease reconnect controller {n} and press START to continue.,游戏暂停\n\n请重新连接控制器 {n}，然后按 START 继续。,menu-test
+a382bafa,Gates of Hell Arena Failed,地狱之门竞技场挑战失败,menu-test
+a473008d,Requires {r} {x} to equip,装备需要 {r} {x},menu-test
+a51f5fd9,Are you sure you want to quit the game now?,确定现在退出游戏吗？,menu-test
+a55c8b0a,Confirm your password,确认密码,menu-test
+a6136b25,Options,选项,menu-test
+a641d5a3,Return to Title,返回标题画面,menu-test
+a7be145e,Localization,本地化,menu-test
+a7c9d302,Confirm,确认,menu-test
+a86cf409,Relic Slot,圣物栏位,menu-test
+aad42ec7,Options,选项,menu-test
+aae8693a,Challenge Cancelled!! - Escape!!,挑战已取消！逃离！,menu-test
+abf3cbc4,Return to Title,返回标题画面,menu-test
+ace90cc2,All,全部,menu-test
+ad522ba1,{p} Microsoft® Points,{p} 微软点数,menu-test
+addc2b47,SIGN IN,登录,menu-test
+ae5e0473,Dante's Inferno™,但丁的地狱™,menu-test
+af568db2,Downloadable Content,下载内容,menu-test
+af64c0ec,{s} has been absolved,{s} 已被赦免,menu-test
+afc7209c,Subtitles,字幕,menu-test
+b0f0b671,Login pending...,正在登录……,menu-test
+b22540f3,Rappel,绳降,menu-test
+b3af6022,Flashbacks,闪回,menu-test
+b3b06075,Story Movies,剧情影片,menu-test
+b45419ab,Cancel,取消,menu-test
+b4c4f7e4,Continue without loading\n,不读取并继续\n,menu-test
+b6104db1,You have failed at absolving {s},赦免 {s} 失败,menu-test
+b8cc82a7,The mana bar increases in scale,提高法力值上限,menu-test
+b9b1b6d4,The health bar increases in scale,提高生命值上限,menu-test
+ba15b28e,Locked,未解锁,menu-test
+bc2b50ad,Gates of Hell,地狱之门,menu-test
+be995548,Relic Slot,圣物栏位,menu-test
+bfdc4a1c,This upgrade requires\n {x} {n} ,此升级需要\n {x} {n},menu-test
+c0054644,Lust Storm,色欲风暴,menu-test
+c0165b56,Holy,神圣,menu-test
+c1683e52,Continue without saving\n,不保存并继续\n,menu-test
+c24101ae,Deutsch,德语,menu-test
+c24201f6,English,英语,menu-test
+c24201fb,Español,西班牙语,menu-test
+c2430239,Français,法语,menu-test
+c24602f8,Italiano,意大利语,menu-test
+c2470333,日本語,日语,menu-test
+c2bf57a1,Treachery,背叛,menu-test
+c31f93eb,Souls,灵魂,menu-test
+c3b42370,TBD,待定,menu-test
+c3d31688,Select,选择,menu-test
+c40b0bf7,Relics,圣物,menu-test
+c4c2f266,[b=RDRight] Back ,[b=RDRight] 返回,menu-test
+c502025a,Coins Collected:,已收集银币：,menu-test
+c5ad26b4,No saved games found.,未找到存档。,menu-test
+c634155d,Magic,魔法,menu-test
+c6786fbe,On,开启,menu-test
+c8edb0bf,No storage device selected.  Game data will not be saved until you select a storage device.,尚未选择存储设备。选择设备前无法保存游戏数据。,menu-test
+c8f2f827,Video Calibration,画面校准,menu-test
+c9542fb3,Congratulations!,恭喜！,menu-test
+c96c9bbc,Absolved,已赦免,menu-test
+ca42115e,Credits,制作人员,menu-test
+cb2ed6f6,Total Score,总分,menu-test
+cbd0a3c6,Press [b=start],按 [b=start],menu-test
+cef44838,Empty,空,menu-test
+cf730d97,Change costume,更换服装,menu-test
+d17f0ac8,Do you want to play in Resurrection Mode?\n\nPlay through the Nine Circles of Hell with your upgraded stats and abilities,是否游玩重生模式？\n\n保留升级后的属性与能力，再战地狱九层,menu-test
+d2141a83,Sins Captured,已捕获罪孽,menu-test
+d3af0b04,Continue,继续,menu-test
+d3e8d362,Options,选项,menu-test
+d452abac,Zealot,狂信者,menu-test
+d53d67ab,Do you want to save your game now?,现在保存游戏吗？,menu-test
+d56d151e,An additional relic slot is unlocked,解锁额外圣物栏位,menu-test
+d6455e2e,No,否,menu-test
+d645f225,N/A,不适用,menu-test
+d7c47010,Cost: {n} Souls,费用：{n} 灵魂,menu-test
+d80c083d,Choose a saved game to load,选择要读取的存档,menu-test
+d81dd3e9,Total Souls Collected,收集灵魂总数,menu-test
+d84ad1c0,Purchased,已购买,menu-test
+dcbe78b5,WARNING,警告,menu-test
+dce6eb38,Controller Map,按键配置,menu-test
+dd340fec,Accept,接受,menu-test
+df93ca2f,Restart Checkpoint,重试检查点,menu-test
+e02c8d42,Play Downloadable Content,游玩下载内容,menu-test
+e10d0c61,Toggle,切换,menu-test
+e13fd2b3,Confirm,确认,menu-test
+e1460d0e,Souls Collected,已收集灵魂,menu-test
+e1e646be,Xbox LIVE Marketplace,Xbox LIVE 卖场,menu-test
+e2176017,You have failed!,你失败了！,menu-test
+e21edf44,Developer Commentary,开发者解说,menu-test
+e26b08a9,Quit Demo,退出演示版,menu-test
+e2df36d8,Level:,等级：,menu-test
+e32b0a31,Cancel\n,取消\n,menu-test
+e37cdfe4,Connecting...,正在连接……,menu-test
+e45c094e,Purchase,购买,menu-test
+e6190696,No playable content found.,未找到可游玩内容。,menu-test
+e672e80e,Light Attack,轻攻击,menu-test
+e7494e11,High Score,最高分,menu-test
+e8156b71,Congratulations!,恭喜！,menu-test
+e8625205,Are you sure you want to quit the game now? All unsaved progress will be lost.,确定现在退出游戏吗？所有未保存进度都将丢失。,menu-test
+e8b8b8dc,Checking saved games...\nPlease don't turn off your Xbox 360 console.,正在检查存档……\n请勿关闭 Xbox 360 主机。,menu-test
+e99303e3,Checking for saved games...,正在检查存档……,menu-test
+e9aef462,Choose a costume,选择服装,menu-test
+ea23db3d,Special Thanks,特别感谢,menu-test
+ebcdac39,Sliders,滑块,menu-test
+ec04638b,Information is either missing or invalid.  Please check your input and try again.,信息缺失或无效。 请检查输入后重试。,menu-test
+ec16a395,There is not enough free space on storage device %1.,存储设备 %1 的可用空间不足。,menu-test
+ec4465a6,The mana bar increases in scale,提高法力值上限,menu-test
+ecca5a56,Damned Climb,攀爬亡魂,menu-test
+ecf5cbf8,Bonus,奖励,menu-test
+ed2999d3,The health bar increases in scale,提高生命值上限,menu-test
+ed583efa,Return to Last Checkpoint,返回上个检查点,menu-test
+f06ca575,Cross Attack,十字架攻击,menu-test
+f167a12a,The downloadable content '{n}' is corrupt and cannot be used.,下载内容“{n}”已损坏，无法使用。,menu-test
+f2524550,Level Select,关卡选择,menu-test
+f2c1a188,Unable to save %1.,无法保存 %1。,menu-test
+f4dddaa7,Cancel,取消,menu-test
+f4fe6fe6,The password and confirmed password do not match.,两次输入的密码不一致。,menu-test
+f5b0f5de,Pole Climb Dismount,攀柱脱离,menu-test
+f5b54bcf,CREATE ACCOUNT,创建账户,menu-test
+f5e48c70,Retrieving Server Info...,正在获取服务器信息……,menu-test
+f5ee953a,Unable to delete %1.\n,无法删除 %1。\n,menu-test
+f664d074,Continue,继续,menu-test
+f6cd1e3a,Dante's Loss,但丁的失落,menu-test
+f6fedafe,Continue\n,继续\n,menu-test
+f7af9160,You have signed out of your gamer profile during the process. Load failed.,操作期间已退出玩家档案，读取失败。,menu-test
+f8c057b8,No,否,menu-test
+f9d4fe67,{s} has been punished,{s} 已被惩罚,menu-test
+fa1b035c,Special Features,特别收录,menu-test
+fb2f24e4,Downloadable Content,下载内容,menu-test
+fbf4c335,You have conquered the Gates of Hell Arena.,你已征服地狱之门竞技场。,menu-test
+fc24cdcc,Challenge: SUCCESS!!,挑战：成功！,menu-test
+fc7c2723,Damned,亡魂,menu-test
+fdb56a3e,XP Collected,已收集经验值,menu-test
+fdf16d79,Holy Level:,神圣等级：,menu-test
+fe1f1f03,Equip,装备,menu-test
+febbe690,Brightness,亮度,menu-test
+ff73211e,N/A,不适用,menu-test
+ff97998b,Inferno,地狱,menu-test
+ffa36644,Divine Armor,神圣护甲,menu-test
