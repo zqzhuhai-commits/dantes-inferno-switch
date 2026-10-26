@@ -1,0 +1,79 @@
+{
+  "target_ids": 1664,
+  "normal_glyphs": 771,
+  "variants": [
+    {
+      "name": "00",
+      "translated_ids_per_table": 906,
+      "estimated_2hcl_size": 112902,
+      "supplemental_glyphs": 0,
+      "font_compressed": 0,
+      "texture_compressed": 0
+    },
+    {
+      "name": "02",
+      "translated_ids_per_table": 914,
+      "estimated_2hcl_size": 112929,
+      "supplemental_glyphs": 2,
+      "font_compressed": 652,
+      "texture_compressed": 58084
+    },
+    {
+      "name": "08",
+      "translated_ids_per_table": 926,
+      "estimated_2hcl_size": 112940,
+      "supplemental_glyphs": 8,
+      "font_compressed": 740,
+      "texture_compressed": 58540
+    },
+    {
+      "name": "16",
+      "translated_ids_per_table": 951,
+      "estimated_2hcl_size": 112988,
+      "supplemental_glyphs": 16,
+      "font_compressed": 850,
+      "texture_compressed": 59174
+    },
+    {
+      "name": "32",
+      "translated_ids_per_table": 1001,
+      "estimated_2hcl_size": 112812,
+      "supplemental_glyphs": 32,
+      "font_compressed": 1041,
+      "texture_compressed": 60329
+    },
+    {
+      "name": "48",
+      "translated_ids_per_table": 1035,
+      "estimated_2hcl_size": 112875,
+      "supplemental_glyphs": 48,
+      "font_compressed": 1207,
+      "texture_compressed": 61521
+    },
+    {
+      "name": "62",
+      "translated_ids_per_table": 1066,
+      "estimated_2hcl_size": 112902,
+      "supplemental_glyphs": 62,
+      "font_compressed": 1375,
+      "texture_compressed": 62444
+    }
+  ],
+  "version": "0.8.0-G2-dual-font-coverage",
+  "baseline_user_report": "F1 menus work; G0 numeric icon labels work",
+  "tool_tests": 68,
+  "subtitle_table_942_unchanged": true,
+  "viv_index_unchanged": true,
+  "viv_total_size_unchanged": true,
+  "streams_updated": [
+    2095,
+    298
+  ],
+  "max_replacements": 2132,
+  "max_translated_ids_per_table": 1066,
+  "remaining_target_ids_in_max_variant": 598,
+  "switch_tested": false,
+  "real_viv_end_to_end_tested": false,
+  "scope": "largest fitting variant chosen at installation; each plan lists all deferred IDs",
+  "str_layout": "original chunk slots if possible; otherwise repack compressed chunks inside original fixed-size VIV entries"
+}

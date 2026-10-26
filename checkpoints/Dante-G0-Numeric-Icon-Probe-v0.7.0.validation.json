@@ -12,12 +12,15 @@
   "translations_identical_to_f1": true,
   "original_viv_available": false,
   "real_viv_end_to_end_tested": false,
-  "switch_tested": false,
+  "switch_tested": true,
   "output_sha256": "calculated independently at installation before writing",
   "new_chinese_glyphs": 0,
   "new_textures": 0,
   "limitations": [
     "numeric glyph parser behavior awaiting hardware/code verification",
     "not a full Chinese font expansion"
-  ]
+  ],
+  "hardware_user_report": "can enter game; menu labels become button icons",
+  "screenshot_observation": "BACK at Start Game position, START at Options position; other Chinese menu labels visible",
+  "new_chinese_glyphs_tested": false
 }

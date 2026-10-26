@@ -1,0 +1,31 @@
+{
+  "glyphs": 739,
+  "font_decoded_size": 98720,
+  "font_compressed": 9390,
+  "texture_compressed": 30268,
+  "font_slot_capacity": 9860,
+  "texture_slot_capacity": 39228,
+  "atlas": [
+    512,
+    256
+  ],
+  "bitmap_pixels": 12,
+  "geometry_scale": 2,
+  "alpha_levels": 4,
+  "used_height": 220,
+  "translated_ids_per_table": 429,
+  "version": "0.6.2-F2-dense-menu-controls",
+  "tool_tests": 61,
+  "baseline": "F1 v0.6.1",
+  "f1_glyphs_metrics_and_pixels_identical": 612,
+  "table_copies": 2,
+  "total_replacements": 858,
+  "button_marked_instruction_ids": 85,
+  "new_instruction_ids": 83,
+  "source_original_viv_available": false,
+  "real_viv_end_to_end_tested": false,
+  "switch_tested": false,
+  "other_font_stream_298": "unchanged",
+  "buttons_font": "unchanged",
+  "output_sha256": "independently calculated at install before writing"
+}

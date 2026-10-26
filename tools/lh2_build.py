@@ -7,7 +7,7 @@ from lh2 import parse
 from text_tokens import validate
 
 
-def rebuild(data, translations):
+def rebuild(data, translations, encoder=None):
     rows = parse(data)
     known = {row['id']: row for row in rows}
     seen = set()
@@ -26,7 +26,7 @@ def rebuild(data, translations):
             validate(row['source'], text)
         except ValueError as exc:
             raise ValueError(f'{key}: {exc}') from exc
-        replacements[key] = text
+        replacements[key] = encoder(text) if encoder is not None else text
     if not replacements:
         return data
     # Narrow to the observed SHDR, SDAT, trailing FILL layout. Do not relocate

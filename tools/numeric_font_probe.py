@@ -12,23 +12,23 @@ from str_stream import unpack_selected
 PROBES={'Options':'[b=0]','Start Game':'[b=1]','Continue':'[b=37]'}
 EXPECTED={'Options':6,'Start Game':2,'Continue':2}
 
-def replace_labels(original,f1_data):
+def replace_labels(original,f1_data,probes=PROBES,expected=EXPECTED):
     old=parse(original);rows=parse(f1_data)
     if len(old)!=len(rows):raise ValueError('F1 text count differs')
-    out=bytearray(f1_data);counts=dict.fromkeys(PROBES,0)
+    out=bytearray(f1_data);counts=dict.fromkeys(probes,0)
     for before,row in zip(old,rows):
         if before['id']!=row['id']:raise ValueError('F1 string IDs differ')
         label=before['source']
-        if label not in PROBES:continue
+        if label not in probes:continue
         if signature(label):raise ValueError('Probe requires plain original label')
-        replacement=PROBES[label].encode();raw=row['source'].encode();at=row['offset']
+        replacement=probes[label].encode();raw=row['source'].encode();at=row['offset']
         if len(replacement)>len(raw):raise ValueError('Probe exceeds F1 string slot')
         if f1_data[at:at+len(raw)+1]!=raw+b'\0':raise ValueError('Invalid F1 string boundary')
         out[at:at+len(raw)]=replacement+bytes(len(raw)-len(replacement));counts[label]+=1
-    if counts!=EXPECTED:raise ValueError('Unexpected probe label counts')
+    if counts!=expected:raise ValueError('Unexpected probe label counts')
     after=parse(out)
     for before,prior,new in zip(old,rows,after):
-        want=PROBES.get(before['source'],prior['source'])
+        want=probes.get(before['source'],prior['source'])
         if new['id']!=prior['id'] or new['offset']!=prior['offset'] or new['source']!=want:
             raise ValueError('Probe round-trip mismatch')
     if len(out)!=len(f1_data):raise ValueError('Probe changed table size')

@@ -1,0 +1,430 @@
+﻿id,source,translation,status
+00475083,Create Account,创建账户,menu-test
+028e24f6,Holding [b=RDUp] while in the air will break enemy defenses from above with a Critical Attack,在空中按住 [b=RDUp]，可从上方发动重击，击破敌人的防御,translated
+05d44edf,Auto-Absolve,自动赦免,menu-test
+07158e7b,Controller,控制器,menu-test
+07d9798c,Account Password,账户密码,menu-test
+081eb652,Press [b=RDLeft] [b=RDLeft] [b=RDLeft] [b=RDLeft] to initiate a Quick Combo ,按 [b=RDLeft] [b=RDLeft] [b=RDLeft] [b=RDLeft] 发动快速连击 ,translated
+0b41e7a9,Select,选择,menu-test
+0c47a1a2,Confirm,确认,menu-test
+0cb39603,Achievements,成就,menu-test
+0d5cd0fd,Downloadable Content,下载内容,menu-test
+0e8a8219,Scanning for downloadable content...,正在扫描下载内容……,menu-test
+0e8b2026,The Gates of Hell Arena,地狱之门竞技场,menu-test
+0f9f6abd,Absolve,赦免,menu-test
+10f05301,Please reconnect a controller and press START to continue.,请重新连接控制器，然后按 START 继续。,menu-test
+110e1e79,Level Select,关卡选择,menu-test
+11387d24,Play Demo,游玩演示版,menu-test
+115bae4c,Upgrade,升级,menu-test
+11da7dd2,The relic is not equippable. Requires {r} {x} to equip.,无法装备此圣物。装备需要 {r} {x}。,menu-test
+12beed7a,Difficulty,难度,menu-test
+12fcf91f,You have entered an invalid password.,密码无效。,menu-test
+1357d118,The account could not be found.,找不到此账户。,menu-test
+14780491,Holding [b=RDRight] longer will increase the damage from Divine Force when released,按住 [b=RDRight] 的时间越长，释放神圣之力时造成的伤害越高,translated
+150138e8,Start Game,开始游戏,menu-test
+1592f1de,Unholy Level,邪恶等级,menu-test
+168b87bb,Hold [b=RSTop] to slide down,按住 [b=RSTop] 向下滑行,translated
+168ce1d4,Pressing [b=LSBottom] + [b=RDDown] will execute a high frequency Focus Attack combo,按 [b=LSBottom] + [b=RDDown] 发动高频集中攻击连招,translated
+183510c2,Heavy Attack,重攻击,menu-test
+1868f9e7,Locked,未解锁,menu-test
+191f0a9a,EXP:,经验值：,menu-test
+1932feb6,Locked,未解锁,menu-test
+19e423ce,Controller Vibration,控制器振动,menu-test
+1aaa582d,Game Completed,游戏已通关,menu-test
+1bb20ddf,Congratulations!,恭喜！,menu-test
+1cabfc43,Return to Title,返回标题画面,menu-test
+1cb61607,HOLD,按住,menu-test
+1d84725c,Move [b=LStick] in any direction to climb the Damned \nPress [b=RDDown] to jump and [b=RSTop] to slide,向任意方向推动 [b=LStick]，攀爬受诅咒者\n按 [b=RDDown] 跳跃，按 [b=RSTop] 滑行,translated
+1d89c8bf,Use [b=Lstick] to rotate the symbol wheel and change the symbols inside the catchers,使用 [b=Lstick] 旋转符号轮，改变接收槽内的符号,translated
+1e6a0c53,Back,返回,menu-test
+1ea0d5da,Yes,是,menu-test
+1ee66076,Launch,发射,menu-test
+1f468c97,Press [b=RDRight] after countering to initiate a Critical Attack that sends enemies flying,格挡反击后按 [b=RDRight]，发动将敌人击飞的重击,translated
+2041fa2b,Press [b=LSBottom] just before an enemy attack to counter. Press [b=RDLeft] or [b=RDUp] after countering to counter attack,在敌人攻击命中前按 [b=LSBottom] 招架。招架后按 [b=RDLeft] 或 [b=RDUp] 发动反击,translated
+20a17cd2,The health bar increases in scale,提高生命值上限,menu-test
+213b9ea4,Holding  and releasing [b=RDRight] while in the air will launch enemies into the air with divine might,在空中按住并松开 [b=RDRight]，以神圣之力将敌人击至空中,translated
+22005c9b,Cancel,取消,menu-test
+227431ab,Unholy,邪恶,menu-test
+228d7e05,Scroll,滚动,menu-test
+22a284ef,Featurettes,制作花絮,menu-test
+2415c0db,Jump,跳跃,menu-test
+245e8ec7,Calibration,校准,menu-test
+246c586f,Press [b=RDDown] once to jump \nPress [b=RDDown] again in mid-air to double-jump,按一次 [b=RDDown] 跳跃\n在空中再次按 [b=RDDown] 进行二段跳,translated
+25c0b452,Purchase Downloadable Content,购买下载内容,menu-test
+266b0de4,Move [b=LStick] down and press [b=RDDown] to drop down,向下推动 [b=LStick] 并按 [b=RDDown]，向下落去,translated
+26ce76d7,Press [b=RDLeft] to swing fists \n Press [b=RDUp] to stomp,按 [b=RDLeft] 挥拳\n 按 [b=RDUp] 踩踏,translated
+26ce76d8,Press and hold [b=RDRight] to breathe fire \nWhile holding [b=RDRight] use the [b=LStick] to aim,按住 [b=RDRight] 喷火\n按住 [b=RDRight] 时，使用 [b=LStick] 瞄准,translated
+281f81f3,Push Up on the [b=LStick] to pull up \nPush Down on the [b=LStick] or press [b=RDDown] to drop,向上推动 [b=LStick] 翻上边缘\n向下推动 [b=LStick] 或按 [b=RDDown] 松手下落,translated
+281f81f4,Move Left or Right on the [b=LStick] to shimmy,向左或向右推动 [b=LStick]，沿边缘横向移动,translated
+284021e2,Bestiary,怪物图鉴,menu-test
+286557f8,Locked,未解锁,menu-test
+290ecf50,This is where a tutorial message will appear,教程提示将在此显示,menu-test
+2a91ca24,Waiting for download...,正在等待下载……,menu-test
+2b078a4b,More Information,更多信息,menu-test
+2ca01135,Change storage device,更换存储设备,menu-test
+2caade8f,Unholy,邪恶,menu-test
+2dc23d62,Pressing [b=LSBottom] + [b=RDLeft] during Vile Tornado will send enemies flying with a Critical Attack,在邪恶旋风期间按 [b=LSBottom] + [b=RDLeft]，发动重击将敌人击飞,translated
+2defe578,Use [b=LStick] to move up and down \nHold [b=RSTop] to build momentum and swing,使用 [b=LStick] 上下移动\n按住 [b=RSTop] 积蓄动量并摆荡,translated
+2defe579,Press [b=RDDown] while swinging to jump off \nPress [b=RDDown] again to jump a second time,摆荡时按 [b=RDDown] 跳离\n再次按 [b=RDDown] 进行二段跳,translated
+2ea2f12f,Accept,接受,menu-test
+2f499df4,Back,返回,menu-test
+30118a22,User Name (e-mail),用户名（电子邮箱）,menu-test
+30d116b6,Your Level:,你的等级：,menu-test
+30ee7e1a,Evade,闪避,menu-test
+31e14678,Relic,圣物,menu-test
+33506c22,Enter your E-mail Address,输入电子邮箱地址,menu-test
+33525ba0,Continue without deleting\n,不删除并继续\n,menu-test
+34f7bb1a,"Remember, when Dante's cross lights up, press [b=RDLeft]",记住，当但丁的十字架亮起时，按 [b=RDLeft],translated
+34f9c175,"Hold down [b=LSTop] and press [b=RDRight], [b=RDUp], [b=RDLeft], or [b=RDDown] to perform a magic attack",按住 [b=LSTop]，再按 [b=RDRight]、[b=RDUp]、[b=RDLeft] 或 [b=RDDown] 施放魔法,translated
+354c190c,Inferno,地狱,menu-test
+360c73de,Move,移动,menu-test
+36387c9f,Confirm Your Password,再次输入密码,menu-test
+366ddb4c,Quit,退出,menu-test
+36725c87,Enter a password,输入密码,menu-test
+3797f850,Highest Wave Completed,完成的最高波次,menu-test
+389a36b0,This is a temporary warning message,临时警告提示,menu-test
+38b667f6,Magic,魔法,menu-test
+39002905,Loading,读取中,menu-test
+3aab0bf8,Retrieving User Info...,正在获取用户信息……,menu-test
+3b006e5c,You are not signed in to a gamer profile.,尚未登录玩家档案。,menu-test
+3bb83aae,Auto Absolve,自动赦免,menu-test
+3d243122,Enter a password (4-16 characters),输入密码（4 至 16 个字符）,menu-test
+3d645230,upgraded,已升级,menu-test
+3e314c32,Unholy Level:,邪恶等级：,menu-test
+3e8133de,Sign in,登录,menu-test
+3efe814a,Pull [b=LSBottom] to block attacks ,扣动 [b=LSBottom] 格挡攻击 ,translated
+3efe814b,Use [b=RStick] to quickly evade enemies,使用 [b=RStick] 快速闪避敌人,translated
+3efe814c,Hold [b=LSTop] to bring up magic to activate,按住 [b=LSTop] 调出可施放的魔法,translated
+3eff8177,[b=Start] for game help,[b=Start] 查看游戏帮助,translated
+3f48d8e3,Beatrice Stones,贝雅特丽齐之石,menu-test
+3f61f064,Save game,保存游戏,menu-test
+3f700a7e,Magic,魔法,menu-test
+41ce0922,Reset,重置,menu-test
+41ee12b6,Locked,未解锁,menu-test
+41f3076e,Combo List,连招列表,menu-test
+42591bdb,Retry,重试,menu-test
+4348c77f,Zealot,狂信者,menu-test
+4348c780,Hellish,地狱般,menu-test
+4348c781,Infernal,炼狱,menu-test
+435c3c7b,Pull [b=RSBottom] to grab enemies \nPress [b=RDLeft] to Punish or [b=RDRight] to Absolve,扣动 [b=RSBottom] 抓取敌人\n按 [b=RDLeft] 惩罚，或按 [b=RDRight] 救赎,translated
+435fb850,Relics,圣物,menu-test
+436e8565,Requires Unholy Level:,需要邪恶等级：,menu-test
+4409f4b3,"Virgil has gifted you with your first Holy Magic, Righteous Path \nPress and Hold [b=LSTop] and then press [b=RDDown]",维吉尔赠予了你第一个神圣魔法：正义之路\n按住 [b=LSTop]，再按 [b=RDDown],translated
+45191b55,Press [b=RDUp] [b=RDUp] [b=RDUp] [b=RDUp] to initiate a Fierce Combo that knocks enemies to the ground and breaks their blocks,按 [b=RDUp] [b=RDUp] [b=RDUp] [b=RDUp] 发动猛烈连击，将敌人击倒并击破格挡,translated
+47597e30,Off,关闭,menu-test
+47efe790,Holding and releasing [b=RDRight] will break enemy defenses by releasing a concentrated short range burst of holy energy,按住并松开 [b=RDRight]，释放集中的近距离神圣能量，击破敌人的防御,translated
+49870c85,Trials of St. Lucia [Coming Soon],圣露西亚的试炼 [Coming Soon],menu-test
+49bfb931,Continue without saving and without access to Xbox LIVE,不保存且不连接 Xbox LIVE，继续游戏,menu-test
+49f7e228,Gamma,伽马值,menu-test
+4a48d9f2,Press [b=RDRight] to breathe fire \nPull [b=RSBottom] to grab enemies,按 [b=RDRight] 喷火\n扣动 [b=RSBottom] 抓取敌人,translated
+4a72cad8,Poem History,诗文沿革,menu-test
+4a752416,Dante in History,但丁生平,menu-test
+4a98a653,Sound Effects Volume,音效音量,menu-test
+4b576496,Stones Collected:,已收集石块：,menu-test
+4b86c090,Downloading online terms and conditions...,正在下载在线条款……,menu-test
+4bfcd7fe,Player Movement,角色移动,menu-test
+4c05820e,When a Redemption bar is full press [b=LSTop] and [b=RSTop] to activate Redemption,救赎能量槽蓄满后，同时按 [b=LSTop] 和 [b=RSTop] 激活救赎,translated
+4c17f485,Options,选项,menu-test
+4c7174a3,Achievements,成就,menu-test
+4daaf5f6,Soundtrack,原声音乐,menu-test
+4daccdc9,Surface,地表,menu-test
+4e2dffcc,Waiting for costume change...,正在等待更换服装……,menu-test
+4fa0787c,Press and hold [b=RDUp] to launch nearby enemies in the air,按住 [b=RDUp] 将附近的敌人挑至空中,translated
+5015c3cf,Upgrade Available,可升级,menu-test
+515c862b,Dante's Inferno™,但丁的地狱™,menu-test
+51dcbca9,The mana bar increases in scale,提高法力值上限,menu-test
+52d0bb76,Redemption Cell,救赎能量格,menu-test
+53daad63,Press and hold [b=RDUp] to launch nearby enemies in the air,按住 [b=RDUp] 将附近的敌人挑至空中,translated
+5416c183,Press,按下,menu-test
+54195fd1,The health bar increases in scale,提高生命值上限,menu-test
+557a3035,Download,下载,menu-test
+559b65ce,What would you like to do?,你想做什么？,menu-test
+56623355,Combat,战斗,menu-test
+56d6a3c2,EXP Level Attained,已达到经验等级,menu-test
+572c8bc1,Options,选项,menu-test
+5732c687,Name 4,名称 4,menu-test
+5732c688,Name 5,名称 5,menu-test
+5732c689,Name 6,名称 6,menu-test
+5821375c,This relic is already equipped.,此圣物已装备。,menu-test
+594e2925,Holy Level,神圣等级,menu-test
+5a7a73a6,Choose where to save your game,选择游戏保存位置,menu-test
+5ae42ac1,Scythe Swing,挥动镰刀,menu-test
+5c4e5a8b,More Options,更多选项,menu-test
+5cc0d96c,default,默认,menu-test
+5daa6e7d,You do not have any magic spells yet,你尚未获得魔法,menu-test
+5e3e87e4,Adjust,调整,menu-test
+5efc24ee,Sign In,登录,menu-test
+5f960137,Confirm Password,确认密码,menu-test
+5fc0ba48,Start Game,开始游戏,menu-test
+5fcebc6c,Pull [b=RSBottom] to grab an enemy with Dante's scythe,扣动 [b=RSBottom]，用但丁的镰刀抓取敌人,translated
+607d1d11,You now have the power of Beatrice's Holy Cross \nPress [b=RDRight] to activate Holy Blast,你已获得贝雅特丽齐的神圣十字架之力\n按 [b=RDRight] 发动神圣冲击,translated
+60ff891b,Congratulations!,恭喜！,menu-test
+61a89620,Move [b=RStick] in the direction you want to evade,朝想要闪避的方向推动 [b=RStick],translated
+626492aa,Connecting to EA server...\n\nPress [b=MenuCancel] to cancel.,正在连接 EA 服务器……\n\n按 [b=MenuCancel] 取消。,translated
+629b5e7e,You've found a relic \nPress [b=Start] and slot these in your cross \nRelics amplify your abilities\n,你找到了一件圣物\n按 [b=Start]，将圣物镶嵌在十字架上\n圣物能增强你的能力\n,translated
+635e2807,Downloading Terms of Service...,正在下载服务条款……,menu-test
+6394ee3e,Name 7,名称 7,menu-test
+65bdd056,Punish,惩罚,menu-test
+6653f424,Resume,继续游戏,menu-test
+670d0b60,N/A,不适用,menu-test
+679e1a12,Name 2,名称 2,menu-test
+679e1a13,Name 3,名称 3,menu-test
+67a94a16,Tutorials,教程,menu-test
+67cc51b0,Story,剧情,menu-test
+68a51c2c,Pressing [b=RDRight] [b=RDRight] [b=RDRight] [b=RDRight] will unleash a devastating wave of holy energy,按 [b=RDRight] [b=RDRight] [b=RDRight] [b=RDRight]，释放毁灭性的神圣能量波,translated
+68fd1cb5,Redemption Cell,救赎能量格,menu-test
+693a8b8f,New saved game,新存档,menu-test
+699253c2,Mana,法力,menu-test
+6b0bff81,Poem,诗文,menu-test
+6c882235,Pressing [b=LSBottom] + [b=RDLeft] while in the air will slice enemies in the air with a Focus Attack,空中按 [b=LSBottom] + [b=RDLeft]，以集中攻击斩击空中的敌人,translated
+6cf32ccb,to Continue,继续,menu-test
+6e6a03f1,Trials of St. Lucia,圣露西亚的试炼,menu-test
+6e7e29de,Congratulations!,恭喜！,menu-test
+6f074af6,Ledges,边缘攀爬,menu-test
+6fff0fe6,Use your aerial [b=RDUp] attack and grab [b=RSBottom] to bounce characters back up when Dante is in the air,但丁在空中时，使用 [b=RDUp] 攻击和 [b=RSBottom] 抓取，可将敌人再次弹起,translated
+70037073,Please wait.,请稍候。,menu-test
+707f33e6,Holy,神圣,menu-test
+71ab0a27,Gap Jump,跨越缺口,menu-test
+72b6dfe1,Waves Completed,已完成波次,menu-test
+73191fed,Animated Feature Trailer,动画长片预告片,menu-test
+75ae005f,Collectibles,收集品,menu-test
+76803939,Dante's Journal,但丁的日志,menu-test
+7735e044,Press up on [b=LStick] and then press [b=RDDown] to pull yourself up and over the ledge,向上推动 [b=LStick]，再按 [b=RDDown]，爬上边缘并翻越,translated
+773a0149,Jump,跳跃,menu-test
+77bfdcbe,Block,格挡,menu-test
+7836c5a6,Pressing [b=LSBottom] + [b=RDUp] while in the air will scar the ground with a Fierce Attack,空中按 [b=LSBottom] + [b=RDUp]，发动猛烈攻击劈击地面,translated
+7890fe54,Press [b=RDUp] [b=RDUp] to initiate a Fierce Attack that hits enemies multiple times,按 [b=RDUp] [b=RDUp] 发动多次命中敌人的猛烈攻击,translated
+79139528,Select,选择,menu-test
+79268612,Breakable,可破坏物,menu-test
+79448b85,Beatrice Stones,贝雅特丽齐之石,menu-test
+7a32ee31,Pole Climb,攀爬立柱,menu-test
+7a75b2f8,Confirm upgrade,确认升级,menu-test
+7b4556e7,Evade,闪避,menu-test
+7be074df,Press [b=RDUp] [b=RDUp] while in the air to initiate a Fierce Attack and finishing move,空中按 [b=RDUp] [b=RDUp]，发动猛烈攻击与终结招式,translated
+7c7260c4,Total Time Played,总游戏时间,menu-test
+7c738f8a,Unequip,卸下,menu-test
+7cc94efd,Longest Combo,最长连击,menu-test
+7e477b4a,Gates of Hell,地狱之门,menu-test
+7e64539b,Credits,制作人员,menu-test
+7f479538,About Dante,关于但丁,menu-test
+80cfdbd5,You have now collected enough souls to purchase an upgrade \nTo access the Upgrade menu press [b=Start],灵魂已足够，可以购买升级\n按 [b=Start] 打开升级菜单,translated
+8122f21d,Grab,抓取,menu-test
+81287376,Tutorials,教程,menu-test
+82a716b0,Level Select (Debug),关卡选择（调试）,menu-test
+82e7daf3,Back,返回,menu-test
+83502382,Martyrdom,殉道,menu-test
+84773f04,Password (4-16 char.),密码（4 至 16 个字符）,menu-test
+851ca373,Music Volume,音乐音量,menu-test
+854870c5,[b=LStick] to rotate the symbol wheel,[b=LStick] 旋转符号轮,translated
+85549fa8,The mana bar increases in scale,提高法力值上限,menu-test
+861eab06,Beatrice Stone,贝雅特丽齐之石,menu-test
+871c4b5b,Press [b=RDLeft] for a quick attack \nPress [b=RDUp] for a heavy attack,按 [b=RDLeft] 发动快速攻击\n按 [b=RDUp] 发动重攻击,translated
+877b2074,Treachery,背叛,menu-test
+884cc5da,Press [b=RDDown] to let go of the wire,按 [b=RDDown] 松开绳索,translated
+887fd8a9,Total Bonus Time,总奖励时间,menu-test
+8a0dcf68,No storage device selected.  You will need to select a storage device to load games.,尚未选择存储设备，读取游戏前请选择。,menu-test
+8aab465c,Movies,影片,menu-test
+8b825381,Contrast,对比度,menu-test
+8ba55e2f,Infernal,炼狱,menu-test
+8c491494,Load Game,读取游戏,menu-test
+8d729036,Requires Holy Level:,需要神圣等级：,menu-test
+8da1b650,Hellish,地狱般,menu-test
+8e8f7659,N/A,不适用,menu-test
+8f253852,Wire Hang,悬挂绳索,menu-test
+8fbd5079,"This is a test.  A really long test.  If you see this that means the subtitles are working.  This is the X button: [b=RDLeft]. However, you shouldn't see this if subtitles are already established.",字幕测试：这是一段较长的测试文本。X 按钮：[b=RDLeft]。若字幕已正常启用，则不应看到此提示。,translated
+90389bb7,Options,选项,menu-test
+90a8b264,Return to Title,返回标题画面,menu-test
+91fd2bb6,Press [b=MenuCancel] to cancel,按 [b=MenuCancel] 取消,translated
+92517d0b,Quit Game,退出游戏,menu-test
+926a1541,Are you sure you want to quit the game now?,确定现在退出游戏吗？,menu-test
+92de0be0,Zoom,缩放,menu-test
+946e3ed0,Yes,是,menu-test
+95fba9d3,Your Souls: {n},你的灵魂：{n},menu-test
+970faea5,Damned,亡魂,menu-test
+97318bad,Bonus content and special features,额外内容与特别收录,menu-test
+977a2f94,This is a test tutorial msg.  Press the [b=RDLeft] button to use light attack.,测试教程：按 [b=RDLeft] 发动轻攻击。,translated
+97afa257,Canticle I: Inferno,第一篇：地狱,menu-test
+982a5678,Pressing [b=LSBottom] + [b=RDRight] during Sacred Judgement will launch and stun enemies in the air,施展神圣裁决时按 [b=LSBottom] + [b=RDRight]，将敌人挑空并震晕,translated
+98d60d89,Treachery,背叛,menu-test
+99dda22b,Use Magic,使用魔法,menu-test
+99dda22c,Block/Special Combo Modifier,格挡／特殊连招修饰键,menu-test
+99e3a3a5,Object Interact,与物体互动,menu-test
+99e3a3a6,Grab,抓取,menu-test
+99f05b74,Remember you can modify the difficulty at any time in the options screen by pressing [b=Select],按 [b=Select] 打开选项界面，可随时调整难度,translated
+9a174eca,Temp Menu,临时菜单,menu-test
+9c1cff2b,Pressing [b=RDRight] [b=RDRight] [b=RDRight] will unleash a three part attack of divine energy,按 [b=RDRight] [b=RDRight] [b=RDRight]，释放三段神圣能量攻击,translated
+9df0dde0,Select a storage device,选择存储设备,menu-test
+9eb96f2a,Press [b=RSTop] to swing on your scythe \nHold [b=RSTop] to build momentum and continue your swing,按 [b=RSTop] 借助镰刀摆荡\n按住 [b=RSTop] 积蓄动量并持续摆荡,translated
+9eb96f2b,Press [b=RDDown] to jump off your swing \nPress [b=RDDown] again to jump a second time\n,按 [b=RDDown] 从摆荡中跳出\n再次按 [b=RDDown] 进行二段跳\n,translated
+9efa2573,Filters,筛选,menu-test
+9f4ccdac,Press [b=RDLeft] after countering a projectile to return the projectile back to the enemy,成功格挡投射物后按 [b=RDLeft]，将其弹回敌人,translated
+a0208076,Hold [b=RDLeft] to quickly dash backwards and then dash forward with a sweeping attack,按住 [b=RDLeft] 快速后退，再向前突进横扫,translated
+a1b558df,Infinite Magic,无限魔法,menu-test
+a1b558e0,100 Combo,百次连击,menu-test
+a1b558e1,Air Kills,空中击杀,menu-test
+a1b558e2,Stay in the Air,滞空,menu-test
+a1b558e3,Protect Innocent,保护无辜者,menu-test
+a1b558e4,No Magic,禁止魔法,menu-test
+a1b558e5,Losing Health,生命流失,menu-test
+a1b558e6,No Block,禁止格挡,menu-test
+a1b558e7,Single Combo,一气呵成,menu-test
+a1f5321f,An additional relic slot is unlocked,解锁额外圣物栏位,menu-test
+a22231f0,GAME PAUSED\n\nPlease reconnect controller {n} and press START to continue.,游戏暂停\n\n请重新连接控制器 {n}，然后按 START 继续。,menu-test
+a265222d,Move [b=LStick] Left and press [b=RDDown] when facing left \nMove [b=LStick] Right and press [b=RDDown] when facing right,面朝左时向左推动 [b=LStick]，再按 [b=RDDown]\n面朝右时向右推动 [b=LStick]，再按 [b=RDDown],translated
+a382bafa,Gates of Hell Arena Failed,地狱之门竞技场挑战失败,menu-test
+a473008d,Requires {r} {x} to equip,装备需要 {r} {x},menu-test
+a4fffeb1,Mashing [b=LSBottom] + [b=RDUp] during Diabolic Hammer will unleash a fury of Critical Attacks with a damaging finish,施展魔性重锤时连按 [b=LSBottom] + [b=RDUp]，发动连续暴击和强力终结技,translated
+a51f5fd9,Are you sure you want to quit the game now?,确定现在退出游戏吗？,menu-test
+a55c8b0a,Confirm your password,确认密码,menu-test
+a6136b25,Options,选项,menu-test
+a641d5a3,Return to Title,返回标题画面,menu-test
+a7323ea5,Press [b=RDLeft] or [b=RDUp] to attack while swinging.,摆荡时按 [b=RDLeft] 或 [b=RDUp] 攻击。,translated
+a7be145e,Localization,本地化,menu-test
+a7c9d302,Confirm,确认,menu-test
+a7f2f89f,Pressing [b=LSBottom] + [b=RDRight] while in the air will crash Dante down in a Focus Attack that stuns nearby enemies,空中按 [b=LSBottom] + [b=RDRight]，向下猛击并以集中攻击震晕附近敌人,translated
+a86cf409,Relic Slot,圣物栏位,menu-test
+a879f4c4,Pull [b=LSBottom] to block attacks \nSome attacks cannot be blocked,按 [b=LSBottom] 格挡攻击\n部分攻击无法格挡,translated
+aad42ec7,Options,选项,menu-test
+aae8693a,Challenge Cancelled!! - Escape!!,挑战已取消！逃离！,menu-test
+aaed0637,Move the [b=LStick] to move up and down \nPress [b=RDDown] and the [b=LStick] to jump,推动 [b=LStick] 上下移动\n按 [b=RDDown] 并推动 [b=LStick] 跳跃,translated
+abf3cbc4,Return to Title,返回标题画面,menu-test
+ace90cc2,All,全部,menu-test
+ad522ba1,{p} Microsoft® Points,{p} 微软点数,menu-test
+addc2b47,SIGN IN,登录,menu-test
+ae5e0473,Dante's Inferno™,但丁的地狱™,menu-test
+af568db2,Downloadable Content,下载内容,menu-test
+af64c0ec,{s} has been absolved,{s} 已被赦免,menu-test
+afc7209c,Subtitles,字幕,menu-test
+b0e2df94,Pressing [b=LSBottom] + [b=RDRight] will initiate a two part Focus Attack that violently pulls enemies toward Dante with divine might,按 [b=LSBottom] + [b=RDRight] 发动两段集中攻击，以神圣之力将敌人拉向但丁,translated
+b0f0b671,Login pending...,正在登录……,menu-test
+b1dd0a23,Pull [b=RSBottom] to grab enemies,按 [b=RSBottom] 抓取敌人,translated
+b22540f3,Rappel,绳降,menu-test
+b3af6022,Flashbacks,闪回,menu-test
+b3b06075,Story Movies,剧情影片,menu-test
+b45419ab,Cancel,取消,menu-test
+b4c4f7e4,Continue without loading\n,不读取并继续\n,menu-test
+b524b640,Press [b=RDLeft] to pound fists \nPress [b=RDUp] to stomp,按 [b=RDLeft] 挥拳猛击\n按 [b=RDUp] 践踏,translated
+b5f424d6,Press and hold [b=RSTop] to slide down,按住 [b=RSTop] 向下滑行,translated
+b6104db1,You have failed at absolving {s},赦免 {s} 失败,menu-test
+b8cc82a7,The mana bar increases in scale,提高法力值上限,menu-test
+b9b1b6d4,The health bar increases in scale,提高生命值上限,menu-test
+ba15b28e,Locked,未解锁,menu-test
+bc2b50ad,Gates of Hell,地狱之门,menu-test
+bce27ead,To use Magic hold down [b=LSTop] and then press the button that the magic ability is assigned to,按住 [b=LSTop]，再按分配给该魔法的按键，即可施法,translated
+bce27eae,To assign Magic to different buttons press [b=Start] and go to the Magic screen,按 [b=Start] 进入魔法界面，可将魔法分配至不同按键,translated
+be995548,Relic Slot,圣物栏位,menu-test
+bfdc4a1c,This upgrade requires\n {x} {n} ,此升级需要\n {x} {n},menu-test
+bfdf5058,Move [b=LStick] in any direction to move along the wire \nMove [b=LStick] and hold [b=RSTop] to leap forward on the wire,推动 [b=LStick] 沿绳索移动\n推动 [b=LStick] 并按住 [b=RSTop]，沿绳索向前跃进,translated
+c0054644,Lust Storm,色欲风暴,menu-test
+c0165b56,Holy,神圣,menu-test
+c1683e52,Continue without saving\n,不保存并继续\n,menu-test
+c24101ae,Deutsch,德语,menu-test
+c24201f6,English,英语,menu-test
+c24201fb,Español,西班牙语,menu-test
+c2430239,Français,法语,menu-test
+c24602f8,Italiano,意大利语,menu-test
+c2470333,日本語,日语,menu-test
+c2bf57a1,Treachery,背叛,menu-test
+c31f93eb,Souls,灵魂,menu-test
+c364139b,Pressing [b=LSBottom] + [b=RDUp] will initiate a deadly Focus Attack combo for massive damage,按 [b=LSBottom] + [b=RDUp] 发动致命集中连击，造成大量伤害,translated
+c3b42370,TBD,待定,menu-test
+c3d31688,Select,选择,menu-test
+c40b0bf7,Relics,圣物,menu-test
+c4c2f266,[b=RDRight] Back ,[b=RDRight] 返回,menu-test
+c502025a,Coins Collected:,已收集银币：,menu-test
+c5ad26b4,No saved games found.,未找到存档。,menu-test
+c634155d,Magic,魔法,menu-test
+c6786fbe,On,开启,menu-test
+c6a92043,"During 'Holy Vision' sequences, wait for Dante's cross to light up and immediately press [b=RDLeft]",神圣幻象期间，等待十字架亮起，立刻按 [b=RDLeft],translated
+c8edb0bf,No storage device selected.  Game data will not be saved until you select a storage device.,尚未选择存储设备。选择设备前无法保存游戏数据。,menu-test
+c8f2f827,Video Calibration,画面校准,menu-test
+c9542fb3,Congratulations!,恭喜！,menu-test
+c96c9bbc,Absolved,已赦免,menu-test
+c9a84bb2,Hold [b=RSTop] and move [b=LStick] in the direction you want to move the slider,按住 [b=RSTop]，向所需方向推动 [b=LStick] 以移动滑块,translated
+c9a84bb3,Hold [b=RSTop] and hold [b=RDRight] to charge the slider \nRelease [b=RDRight] to shove it forward,按住 [b=RSTop] 和 [b=RDRight] 为滑块蓄力\n松开 [b=RDRight] 将其推向前方,translated
+c9a84bb4,The longer you charge [b=RDRight] the farther it will go\n,按住 [b=RDRight] 蓄力越久，滑块移动越远\n,translated
+ca42115e,Credits,制作人员,menu-test
+cb2ed6f6,Total Score,总分,menu-test
+cbd0a3c6,Press [b=start],按 [b=start],menu-test
+cef44838,Empty,空,menu-test
+cf730d97,Change costume,更换服装,menu-test
+cf94e22a,Press [b=RDRight] [b=RDRight] to unleash two waves of Divine energy,按 [b=RDRight] [b=RDRight]，释放两道神圣能量,translated
+d17f0ac8,Do you want to play in Resurrection Mode?\n\nPlay through the Nine Circles of Hell with your upgraded stats and abilities,是否游玩重生模式？\n\n保留升级后的属性与能力，再战地狱九层,menu-test
+d2141a83,Sins Captured,已捕获罪孽,menu-test
+d378a25c,Grab the Minion by pressing [b=RSBottom] \nUse [b=LStick] to aim as you throw him,按 [b=RSBottom] 抓住仆从\n投掷时使用 [b=LStick] 瞄准,translated
+d3af0b04,Continue,继续,menu-test
+d3e8d362,Options,选项,menu-test
+d452abac,Zealot,狂信者,menu-test
+d53d67ab,Do you want to save your game now?,现在保存游戏吗？,menu-test
+d56d151e,An additional relic slot is unlocked,解锁额外圣物栏位,menu-test
+d6455e2e,No,否,menu-test
+d645f225,N/A,不适用,menu-test
+d7c47010,Cost: {n} Souls,费用：{n} 灵魂,menu-test
+d80c083d,Choose a saved game to load,选择要读取的存档,menu-test
+d81dd3e9,Total Souls Collected,收集灵魂总数,menu-test
+d84ad1c0,Purchased,已购买,menu-test
+d9d75f2a,Pressing [b=LSBottom] + [b=RDLeft] will execute a sweeping Focus Attack,按 [b=LSBottom] + [b=RDLeft] 发动横扫集中攻击,translated
+dcbe78b5,WARNING,警告,menu-test
+dce6eb38,Controller Map,按键配置,menu-test
+dd340fec,Accept,接受,menu-test
+df93ca2f,Restart Checkpoint,重试检查点,menu-test
+e02c8d42,Play Downloadable Content,游玩下载内容,menu-test
+e10d0c61,Toggle,切换,menu-test
+e13fd2b3,Confirm,确认,menu-test
+e1460d0e,Souls Collected,已收集灵魂,menu-test
+e1e646be,Xbox LIVE Marketplace,Xbox LIVE 卖场,menu-test
+e2176017,You have failed!,你失败了！,menu-test
+e21edf44,Developer Commentary,开发者解说,menu-test
+e26b08a9,Quit Demo,退出演示版,menu-test
+e2df36d8,Level:,等级：,menu-test
+e32b0a31,Cancel\n,取消\n,menu-test
+e37cdfe4,Connecting...,正在连接……,menu-test
+e3d04438,Pressing [b=LSBottom] + [b=RDDown] during Soul Stabber will launch enemies into the air with a forceful finishing move,施展灵魂刺击时按 [b=LSBottom] + [b=RDDown]，以强力终结技将敌人挑空,translated
+e45c094e,Purchase,购买,menu-test
+e6190696,No playable content found.,未找到可游玩内容。,menu-test
+e672e80e,Light Attack,轻攻击,menu-test
+e7494e11,High Score,最高分,menu-test
+e8156b71,Congratulations!,恭喜！,menu-test
+e8625205,Are you sure you want to quit the game now? All unsaved progress will be lost.,确定现在退出游戏吗？所有未保存进度都将丢失。,menu-test
+e8b8b8dc,Checking saved games...\nPlease don't turn off your Xbox 360 console.,正在检查存档……\n请勿关闭 Xbox 360 主机。,menu-test
+e99303e3,Checking for saved games...,正在检查存档……,menu-test
+e9aef462,Choose a costume,选择服装,menu-test
+e9cd7ab1,[b=RDDown] to speed up the symbol fall rate,按 [b=RDDown] 加快符号下落速度,translated
+ea23db3d,Special Thanks,特别感谢,menu-test
+ebcdac39,Sliders,滑块,menu-test
+ec04638b,Information is either missing or invalid.  Please check your input and try again.,信息缺失或无效。 请检查输入后重试。,menu-test
+ec16a395,There is not enough free space on storage device %1.,存储设备 %1 的可用空间不足。,menu-test
+ec4465a6,The mana bar increases in scale,提高法力值上限,menu-test
+ecca5a56,Damned Climb,攀爬亡魂,menu-test
+ecf5cbf8,Bonus,奖励,menu-test
+ed2999d3,The health bar increases in scale,提高生命值上限,menu-test
+ed583efa,Return to Last Checkpoint,返回上个检查点,menu-test
+f06ca575,Cross Attack,十字架攻击,menu-test
+f167a12a,The downloadable content '{n}' is corrupt and cannot be used.,下载内容“{n}”已损坏，无法使用。,menu-test
+f2524550,Level Select,关卡选择,menu-test
+f2c1a188,Unable to save %1.,无法保存 %1。,menu-test
+f4dddaa7,Cancel,取消,menu-test
+f4fe6fe6,The password and confirmed password do not match.,两次输入的密码不一致。,menu-test
+f5b0f5de,Pole Climb Dismount,攀柱脱离,menu-test
+f5b54bcf,CREATE ACCOUNT,创建账户,menu-test
+f5e48c70,Retrieving Server Info...,正在获取服务器信息……,menu-test
+f5ee953a,Unable to delete %1.\n,无法删除 %1。\n,menu-test
+f664d074,Continue,继续,menu-test
+f6cd1e3a,Dante's Loss,但丁的失落,menu-test
+f6fedafe,Continue\n,继续\n,menu-test
+f772badf,Pressing [b=LSBottom] + [b=RDDown] while in the air will thrust the Scythe down on enemies with a Critical Attack,空中按 [b=LSBottom] + [b=RDDown]，以镰刀向下突刺，发动暴击,translated
+f7af9160,You have signed out of your gamer profile during the process. Load failed.,操作期间已退出玩家档案，读取失败。,menu-test
+f8c057b8,No,否,menu-test
+f9d4fe67,{s} has been punished,{s} 已被惩罚,menu-test
+fa1b035c,Special Features,特别收录,menu-test
+fb2f24e4,Downloadable Content,下载内容,menu-test
+fbf4c335,You have conquered the Gates of Hell Arena.,你已征服地狱之门竞技场。,menu-test
+fc24cdcc,Challenge: SUCCESS!!,挑战：成功！,menu-test
+fc7c2723,Damned,亡魂,menu-test
+fdb56a3e,XP Collected,已收集经验值,menu-test
+fdf16d79,Holy Level:,神圣等级：,menu-test
+fe1f1f03,Equip,装备,menu-test
+febbe690,Brightness,亮度,menu-test
+ff73211e,N/A,不适用,menu-test
+ff97998b,Inferno,地狱,menu-test
+ffa36644,Divine Armor,神圣护甲,menu-test
