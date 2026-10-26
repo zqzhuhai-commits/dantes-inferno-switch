@@ -1,0 +1,12 @@
+local/
+work/
+__pycache__/
+*.pyc
+*.viv
+*.xex
+*.xexp
+*.nsp
+*.nro
+*.str
+*.toc
+*.rar
