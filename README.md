@@ -1,5 +1,14 @@
 # 但丁的地狱 Switch 简体中文汉化
 
+## 当前进度下载
+
+- [C v0.3 最小主菜单字库测试包](checkpoints/Dante-Minimal-Font-C-v0.3.zip)：仅“选、项”两字，等待用户实机反馈。
+- [A/B v0.2 启动诊断包](checkpoints/Dante-Startup-Diagnostic-v0.2.zip)：A 实机可进游戏且文字生效；B 实机可进游戏但中文为空白。
+- [进度快照与下一步](checkpoints/PROGRESS.md) · [下载文件 SHA-256](checkpoints/SHA256SUMS.txt)
+
+这是开发进度存档，不是完整汉化正式发布。原游戏包未上传。
+
+
 目标：为用户本地原版资源制作简体中文文本与字库补丁。
 
 ## 当前进度（2026-10-26）
