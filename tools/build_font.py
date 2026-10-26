@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 from fontTools.ttLib import TTFont
 
 
-def build(font_data, atlas_data, texture_header, ttf, characters):
+def build(font_data, atlas_data, texture_header, ttf, characters, atlas_width=512):
     if font_data[:4] != b'FONT' or struct.unpack_from('>H',font_data,8)[0] != 7:
         raise ValueError('Unsupported FONT')
     count = struct.unpack_from('>H',font_data,10)[0]
@@ -28,13 +28,17 @@ def build(font_data, atlas_data, texture_header, ttf, characters):
     face = TTFont(ttf); cmap=face.getBestCmap()
     if any(cp not in cmap for cp in needed):
         raise ValueError('Source font lacks required characters')
+    if atlas_width not in (512,1024,2048):
+        raise ValueError('Unsupported expanded atlas width')
+    original_width=width
+    width=atlas_width
     cell=28;columns=width//cell
     newheight=height
     while newheight < height+((len(needed)+columns-1)//columns)*cell:
         newheight*=2
     if newheight>2048 or count+len(needed)>65535:
         raise ValueError('Font capacity exceeded')
-    atlas=Image.new('L',(width,newheight));atlas.paste(Image.frombytes('L',(width,height),atlas_data),(0,0))
+    atlas=Image.new('L',(width,newheight));atlas.paste(Image.frombytes('L',(original_width,height),atlas_data),(0,0))
     draw=ImageDraw.Draw(atlas);font=ImageFont.truetype(str(ttf),24)
     if hasattr(font,'set_variation_by_axes'):font.set_variation_by_axes([500])
     for i,cp in enumerate(needed):

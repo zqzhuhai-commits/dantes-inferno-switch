@@ -1,3 +1,9 @@
+## E v0.5 非剧情文字测试包
+
+[E 安装工具包](checkpoints/Dante-NonStory-E-v0.5.zip) · [独立验证报告](checkpoints/Dante-NonStory-E-v0.5.validation.json)
+
+以 D v0.4 为基线，实际替换 1,664 条全局文字 ID（两份资源共 3,328 处），包含菜单、教程、技能、圣物和图鉴介绍等。剧情/访谈字幕表不改，诗文、生平叙事、人名/版权及内部控制内容按进度说明保留。E 使用新的扩展字库和压缩分包路径，工具与整包校验通过，**尚未实机验证**。先恢复原版，再运行 RUN_E.bat，不能叠加 D；详见压缩包说明和 [进度](checkpoints/PROGRESS.md)。
+
 # 但丁的地狱 Switch 简体中文汉化
 
 ## 当前进度下载

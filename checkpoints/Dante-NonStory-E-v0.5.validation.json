@@ -1,0 +1,24 @@
+{
+  "version": "0.5-E-nonstory-test",
+  "switch_tested": false,
+  "source_bytes": 3170839904,
+  "output_bytes": 3223091200,
+  "output_sha256": "2171601fda9c38a546ad7619b50ecc05b93f65d3f1bcb3069271a3a902dbe186",
+  "translated_ids": 1664,
+  "text_resource_copies": 2,
+  "installed_text_replacements": 3328,
+  "unchanged_viv_entries": 2142,
+  "retained_original_payload_region": true,
+  "font_atlas": [
+    1024,
+    2048
+  ],
+  "glyph_count": 1571,
+  "new_glyphs": 1377,
+  "tool_tests": 45,
+  "text_roundtrip": "passed",
+  "untouched_global_text": "passed",
+  "plot_dialogue_table": "unchanged",
+  "font_coverage": "all visible translation characters present in both fonts",
+  "unrelated_font_stream_chunks": "byte-identical in original order"
+}
