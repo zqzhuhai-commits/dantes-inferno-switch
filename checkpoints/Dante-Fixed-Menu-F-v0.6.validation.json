@@ -1,0 +1,34 @@
+{
+  "version": "0.6-F-fixed-menu-test",
+  "previous_e_result": "failed: user reports startup loading hang",
+  "switch_tested": false,
+  "translated_ids": 346,
+  "translated_unique_labels": 280,
+  "scope": "frontend menu only; gameplay menu table and font unchanged",
+  "output_bytes": 3170839904,
+  "output_sha256": "3df6ad199b8ca7530ab3fb0759ae771e492cbd9f0a6d5bf2649087ae19c281c3",
+  "viv_index": "identical",
+  "all_other_viv_bytes": "identical outside four approved resource slots",
+  "font_stream_chunk_offsets_and_lengths": "identical",
+  "texture_header": "identical",
+  "atlas": [
+    512,
+    256
+  ],
+  "font_glyphs": 612,
+  "font_compressed": 7604,
+  "font_capacity": 9860,
+  "texture_compressed": 25078,
+  "texture_capacity": 39228,
+  "compression": "one Rpak per changed font resource",
+  "visible_menu_glyph_coverage": "complete",
+  "plot_table": "unchanged",
+  "gameplay_text_and_font": "unchanged",
+  "tool_tests": 48,
+  "full_zip_regeneration": "passed",
+  "limitations": [
+    "Not all in-game menus are translated",
+    "Glyph raster, font style, scale and legibility need hardware validation",
+    "The internal string table is rebuilt and its TOC decoded size updated"
+  ]
+}

@@ -59,3 +59,29 @@ D 仍只替换启动字库，关卡字体未改。纹理 512×256，压缩纹理
 python packaging/build_nonstory_release.py /path/to/original/bigfile0.viv /path/to/NotoSansSC.ttf /path/to/Dante-Minimal-Font-C-v0.3 /path/to/new/Dante-NonStory-E-v0.5
 python -m unittest discover -s tests -q
 ```
+
+
+## E 实机失败；F v0.6 按固定尺寸/位置要求制作
+
+用户确认 E v0.5 刚启动即卡在加载界面，标记为实机未通过；静态整包校验通过不代表游戏兼容。用户随后要求先保持 512×256 及资源位置，优先汉化菜单，其他文字另行研究。
+
+F 的严格约束已按实际 VIV 验证：纹理 512×256、tg4h 字节不变；字体和纹理各为一个 Rpak，写回原槽位；所有 STR SHOC 区块偏移/长度不变；VIV 索引、总长度及全部资源位置不变。仅修改 171/2102 启动 TOC、752 启动英文表、2095 启动字体流，其他区域逐字节相同。
+
+菜单范围为 346 条启动全局文本 ID、280 种菜单/常用提示，覆盖开始/继续/选项、音量、字幕、教程开关、画面、存读档、服装、特典等。关卡表 1437、关卡字库 298、对白/访谈表 942 完全不改。暂停和关卡内升级/圣物等仍可能为英文，因此没有声称完成所有菜单。
+
+容量结果：启动 FONT 原槽有效压缩容量 9,860 字节，关卡 FONT 仅 2,940 字节。新字库压缩 7,604 字节，纹理压缩 25,078 字节（纹理槽容量 39,228），只能在保持位置时装入启动字库，无法直接照搬到关卡字库。
+
+新字体保留原始 194 个码点的覆盖范围并补齐菜单字形，总 612 字形，但重新排布字形记录/纹理，改为 Noto Sans SC 12px 位图、两倍几何度量、4 级透明度；并非保留原字形图案或像素。此举用于固定尺寸与容量，字体风格、大小、清晰度需实机验证。不能把 C 两字方案的通过外推到新字体。
+
+从原版及干净 ZIP 完整生成 3,170,839,904 字节 VIV，通过预计算哈希、文本重读、全部译文字形覆盖及非目标区域逐字节比对。输出 SHA-256：3df6ad199b8ca7530ab3fb0759ae771e492cbd9f0a6d5bf2649087ae19c281c3。48 项工具测试通过；F 未实机验证。详见 Dante-Fixed-Menu-F-v0.6.validation.json。
+
+安装：退出游戏恢复原版，运行 RUN_F.bat，语言 English。测试能否进入、主菜单与设置文字、存读档、返回标题及字形清晰度。异常则退出并恢复 .original.日期.bak。NRO/NSP/bigfile1/存档不变。
+
+其他文字：保留 E 的译稿，尚未实现另一种可用加载方式。全关卡菜单仍受字库槽位约束，后续需获得引擎加载代码或验证其他资源方式，不能以修改路径的设想当作已可用方案。
+
+重建：
+
+```bash
+python tools/build_fixed_menu_font.py /path/to/original-font.inf /path/to/NotoSansSC.ttf translations/global.zh-CN.fixed-menu.csv /path/to/new-font
+python packaging/build_fixed_menu_release.py /path/to/original/bigfile0.viv /path/to/Dante-Minimal-Font-C-v0.3 /path/to/new-font /path/to/new/Dante-Fixed-Menu-F-v0.6
+```
