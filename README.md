@@ -4,12 +4,12 @@
 
 ## 当前进度（2026-10-26）
 
-处于资源格式分析阶段，尚无可安装汉化补丁，尚未导出可翻译文本，未进行实机验证。
+已用用户本次游戏包验证 VIV 索引，导出英文全局表 3,310 条与对话表 1,852 条，共 5,162 条记录。首批 84 条全局菜单与常用提示已提供中文初稿。尚无可安装汉化补丁，尚未回封或实机验证。
 
 - 已只读验证 bigfile0.viv 的 2,151 个条目、bigfile1.viv 的 3,724 个条目；所有条目的偏移与长度均在原包范围内。
 - 已在 bigfile0.viv 定位 frontend 文本索引及字体路径。
 - 外层 frontend_global.str、frontend_global.toc、frontend.toc 与原包对应资源 SHA-256 比对相同，不是已完成的汉化。
-- 尚未确定剧情字幕位置，不能认定只修改 bigfile0.viv 即可完成全游戏汉化。
+- 已在 bigfile0.viv 找到英文 inferno_global.en.lh2 与 inferno_dialog.en.lh2；对话表也包含制作花絮访谈等内容，尚未逐场景确认剧情字幕覆盖范围，不能认定只修改 bigfile0.viv 即可完成全游戏汉化。
 
 ## 已确认资源
 
@@ -55,7 +55,7 @@ python tools/viv.py "local/bigfile0.viv" --find "Continue" --encoding utf-16-be 
 - 包头 declared size 与实际大小不一致、条目重叠会记入 warnings。其语义未确认，不自动修复；越界条目则拒绝解析。
 - 批量任务中断可能留下已完成条目，但不会生成成功清单；重新执行请使用新目录。单条复制失败会删除该次未完成文件。
 - 搜索支持 ASCII、UTF-8、UTF-16 LE/BE，按条目流式处理；搜不到不能证明不存在文本，压缩或专用编码仍需解析。
-- 当前新增功能仅通过模拟包测试，等待用户原始资源验证。没有新增已翻译文本，也未解决 STR/TOC、字体映射或回封格式。
+- 已在本次原包验证 2,151 + 3,724 个 VIV 条目范围，并提取英文文本样本；批量提取/清单校验的完整流程仍仅通过模拟包测试。尚未解决中文字库与回封格式。
 
 ### 工具测试
 
@@ -67,10 +67,35 @@ python -m unittest discover -s tests -v
 
 ## 后续工作
 
-1. 解析 TOC 与 STR 容器关系，导出真实原文及稳定字符串 ID。
+1. 扩展已验证的 ols3/SHOC/2HCL 文本解析，核对其余资源与不同场景副本。
 2. 确认剧情字幕、菜单、物品说明等文本覆盖范围。
-3. 建立翻译表与术语表，保留占位符和控制码。
+3. 继续补全翻译表与术语表，复核首批初稿，保留占位符和控制码。
 4. 解析字体纹理、字符映射与排版参数，制作中文字库。
 5. 生成可复现补丁，在资源副本上验证回封，再进行实机测试。
 
 仓库只保存工具、格式说明与汉化工作成果。原版 VIV、XEX、NSP、提取的完整资源和本地扫描清单不上传。
+
+## 本次文本解析成果
+
+`tools/lh2.py` 只读解析已观察的 `ols3 → SHOC/SDAT → 2HCL` 单语言 UTF-8 表，不提供写入或回封。先用 VIV 工具提取条目，再导出 CSV。输出使用 UTF-8 BOM，包含 id、条目内 offset、source、translation；现有输出不会覆盖。
+
+```powershell
+python tools/viv.py "local/bigfile0.viv" --extract 752 --output "local/global-entry.bin"
+python tools/lh2.py "local/global-entry.bin" --output "local/inferno_global.en.csv"
+python tools/viv.py "local/bigfile0.viv" --extract 942 --output "local/dialog-entry.bin"
+python tools/lh2.py "local/dialog-entry.bin" --output "local/inferno_dialog.en.csv"
+```
+
+本次编号适用于用户提供的资源版本，其他版本必须重新核对。解析器检查容器/区块边界、表大小、ID 严格递增、字符串偏移与终止符，不猜测未知布局。
+
+| 条目 | 内部路径 | 记录数 | 提取条目 SHA-256 |
+| --- | --- | ---: | --- |
+| 752 | localization/inferno/inferno_global.en.lh2 | 3310 | 23dc9401f49c2f01ef5e9a42d34ff89f9278238cbe485a14199f9475cf7935a1 |
+| 1437 | 同上，另一个场景副本 | 3310 | 与 752 相同 |
+| 942 | localization/inferno/inferno_dialog.en.lh2 | 1852 | c53d56c75ba8a9471b5c7558f3115393ee0b9f8193ba2af3efbc7d158ee11c92 |
+
+以上两种表中所有记录均已严格 UTF-8 解码，ID 在各表内唯一；两张表的 ID 仍应分别管理，不能假设跨表唯一。完整原文导出保留于本地，不上传完整原版资源。
+
+首批翻译位于 `translations/global.zh-CN.menu.csv`：84 条记录、59 种原文，状态均为 draft；重复菜单项按各自 ID 保留，已核对 ID/原文及控制符。此文件是待复核翻译，不能直接复制到游戏目录使用。
+
+字体线索：frontend_global.str 内的 minion_pro.inf 对应 SDAT/FONT，minion_pro.tg4d 对应 Rpak，后者载荷出现 RefPack 风格的 10fb 标识；这是待进一步解析的线索，尚未实现字库解码、中文字形映射或渲染验证。
